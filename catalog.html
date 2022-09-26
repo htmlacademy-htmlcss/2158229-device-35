@@ -3,73 +3,130 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Магазин гаджетов «Device»</title>
+    <title>Интернет-магазин «Девайс»</title>
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header class="main-header">
+    <header class="main_header">
       <!-- Логотип -->
-      <a class="logo" href="index.html">
-        <img src="images/logo.svg" width="145" height="36" alt="Логотип Device">
+      <a class="main_header_logo_link" href="index.html">
+        <img src="images/logo.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">
       </a>
       <!-- Шапка верхняя с поиском и управлением -->
-      <ul class="controls">
-        <li class="controls_item">
+      <ul class="main_header_controls">
+        <li class="main_header_controls_item">
           <form>
             <input type="text">
-              <button class="controls_button" type="button">
+              <button class="main_header_controls_button" type="button">
                 Найти
               </button>
           </form>
         </li>
 
-        <li class="controls_item">
-          <button class="controls_button" type="button">
+        <li class="main_header_controls_item">
+          <button class="main_header_controls_button" type="button">
             Войти
           </button>
         </li>
 
-        <li class="controls_item">
-          <button class="controls_button" type="button">
+        <li class="main_header_controls_item">
+          <button class="main_header_controls_button" type="button">
             Сравнить
           </button>
         </li>
 
-        <li class="controls_item">
-          <button class="controls_button" type="button">
+        <li class="main_header_controls_item">
+          <button class="main_header_controls_button" type="button">
             Корзина
           </button>
         </li>
       </ul>
       <!-- Шапка нижняя с навигацией -->
-      <nav class="navigation">
-        <ul class="navigation_list">
-          <li class="navigation_item">
-            <button class="navigation_button">Каталог товаров</button>
+      <nav class="main_header_navigation">
+        <ul class="main_header_navigation_list">
+          <li class="main_header_navigation_item">
+            <button class="main_header_navigation_button">Каталог товаров</button>
           </li>
         </ul>
 
-        <ul class="navigation_list">
-          <li class="navigation_item">
-            <a class="navigation_link" href="#">Доставка</a>
+        <ul class="main_header_navigation_list">
+          <li class="main_header_navigation_item">
+            <a class="main_header_navigation_link" href="#">Доставка</a>
           </li>
-          <li class="navigation_item">
-            <a class="navigation_link" href="#">Гарантия</a>
+          <li class="main_header_navigation_item">
+            <a class="main_header_navigation_link" href="#">Гарантия</a>
           </li>
-          <li class="navigation_item">
-            <a class="navigation_link" href="#">Контакты</a>
+          <li class="main_header_navigation_item">
+            <a class="main_header_navigation_link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
 
     </header>
     <!-- Основное содержимое страницы -->
-    <main class="catalog-index">
-      <h1 class="visually-hidden">Магазин гаджетов «Device»</h1>
+    <main class="main-inner">
+
     </main>
     <!-- Подвал сайта -->
-    <footer class="main-footer">
+    <footer class="main_footer">
+      <!-- Блок подвала с адресом -->
+      <section class="main_footer_adress">
+        <h2 class="visually_hidden">Адрес</h2>
+        <a class="main_footer_logo_link" href="index.html">
+          <img src="images/logo-y.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">
+        </a>
 
+        <address class="main_footer_address">
+          <p class="main_footer_address_text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        </address>
+
+        <p class="main_footer_address_line">—</p>
+      </section>
+      <!-- Блок подвала с навигацией -->
+      <section class="main_footer_navigation">
+        <h2 class="visually_hidden">Навигация</h2>
+
+        <ul class="main_footer_navigation_list">
+          <li class="main_footer_navigation_item">
+            <a class="main_footer_navigation_link" href="#">Доставка</a>
+          </li>
+          <li class="main_footer_navigation_item">
+            <a class="main_footer_navigation_link" href="#">Гарантия</a>
+          </li>
+          <li class="main_footer_navigation_item">
+            <a class="main_footer_navigation_link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="main_footer_navigation_social_list">
+          <li class="main_footer_navigation_social_item">
+            <a class="main_footer_navigation_social_link" href="#">
+              <span class="visually_hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="main_footer_navigation_social_item">
+            <a class="main_footer_navigation_social_link" href="#">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+          <li class="main_footer_navigation_social_item">
+            <a class="main_footer_navigation_social_link" href="#">
+              <span class="visually_hidden">Твиттер</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- Блок подвала с телефоном -->
+      <section class="main_footer_tel">
+        <h2 class="visually_hidden">Телефон</h2>
+        <address class="main_footer_adress">
+          <a class="contacts_phone" href="tel:+78005558628">+7 800 555-86-28</a>
+        </address>
+
+        <a class="main_footer_copy" href="#">
+          <img src="images/html.png" width="115" height="33" alt="Разработано в html academy">
+        </a>
+      </section>
     </footer>
   </body>
 </html>
