@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс | Каталог</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Магазин гаджетов «Device»</title>
   </head>
   <body>
+    <!-- Шапка сайта -->
+    <header class="main-header">
+      <!-- Логотип -->
+      <a class="logo" href="index.html">
+        <img src="images/logo.svg" width="145" height="36" alt="Логотип Device">
+      </a>
+      <!-- Шапка верхняя с поиском и управлением -->
+      <ul class="controls">
+        <li class="controls_item">
+          <form>
+            <input type="text">
+              <button class="controls_button" type="button">
+                Найти
+              </button>
+          </form>
+        </li>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+        <li class="controls_item">
+          <button class="controls_button" type="button">
+            Войти
+          </button>
+        </li>
 
+        <li class="controls_item">
+          <button class="controls_button" type="button">
+            Сравнить
+          </button>
+        </li>
+
+        <li class="controls_item">
+          <button class="controls_button" type="button">
+            Корзина
+          </button>
+        </li>
+      </ul>
+      <!-- Шапка нижняя с навигацией -->
+      <nav class="navigation">
+        <ul class="navigation_list">
+          <li class="navigation_item">
+            <button class="navigation_button">Каталог товаров</button>
+          </li>
+        </ul>
+
+        <ul class="navigation_list">
+          <li class="navigation_item">
+            <a class="navigation_link" href="#">Доставка</a>
+          </li>
+          <li class="navigation_item">
+            <a class="navigation_link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation_item">
+            <a class="navigation_link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+    <!-- Основное содержимое страницы -->
+    <main class="catalog-index">
+      <h1 class="visually-hidden">Магазин гаджетов «Device»</h1>
+    </main>
+    <!-- Подвал сайта -->
+    <footer class="main-footer">
+
+    </footer>
   </body>
 </html>
