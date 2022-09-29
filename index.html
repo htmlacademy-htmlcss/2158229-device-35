@@ -15,7 +15,7 @@
       <!-- Шапка верхняя с поиском и управлением -->
       <ul class="main_header_controls">
         <li class="main_header_controls_item">
-          <form class="main_header_find"  action="https://echo.htmlacademy.ru/" method="get">
+          <form class="main_header_find"  action="https://echo.htmlacademy.ru/" method="submit">
             <input type="text" placeholder="Поиск по сайту">
               <button class="main_header_controls_button" type="button">
                 Найти
@@ -40,7 +40,7 @@
       </ul>
       <!-- Шапка нижняя с навигацией -->
       <nav class="main_header_navigation">
-        <button class="main_header_navigation_button">Каталог товаров</button>
+        <a class="main_header_navigation_link" href="#">Каталог товаров</a>
 
         <ul class="main_header_navigation_list">
           <li class="main_header_navigation_item">
@@ -64,18 +64,20 @@
         <h2 class="visually_hidden">Главный слайдер с товарами</h2>
 
         <div class="slider_left">
-          <img class="slider_image" src="#" alt="Товары" >
           <button class="slider_button slider_prev" type="button">
             <span class="visually_hidden">Предыдущий товар</span>
           </button>
+          <img class="slider_image" src="#" alt="Товары" >
+
           <button class="slider_button slider_next" type="button">
             <span class="visually_hidden">Следующий товар</span>
           </button>
         </div>
 
         <div class="slider_right">
-          <span class="slider_number">01</span>
-          <span class="slider_slogan">Порхает как бабочка, жалит как пчела!</span>
+          <b class="slider_number">01</b>
+          <b class="slider_slogan">Порхает как бабочка, жалит как пчела!</b>
+          <span class="slider_text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</span>
           <a class="slider_link" href="#">Подробнее</a>
           <table>
             <tr>
@@ -198,22 +200,23 @@
       </section>
       <!-- Кнопка вызова формы доставки -->
       <section class="delivery_form">
-        <a class="delivery_form_link" href="#">
-          <h2 class="visually_hidden">Кнопка вызова формы доставки</h2>
-          <ul class="delivery_form_list">
-            <li class="delivery_form_item">
-              <img src="images/" alt="Иконка доставки">
-            </li>
-            <li class="delivery_form_item">
-              Доставим редкий товар под заказ
-            </li>
-            <li class="delivery_form_item">
+        <h2 class="visually_hidden">Кнопка вызова формы доставки</h2>
+        <ul class="delivery_form_list">
+          <li class="delivery_form_item">
+            <img src="images/" alt="Иконка доставки">
+          </li>
+          <li class="delivery_form_item">
+            Доставим редкий товар под заказ
+          </li>
+          <li class="delivery_form_item">
+            <a class="delivery_form_link" href="#">
               <span class="visually_hidden">Информация</span>
               <span class="delivery_form_info">i</span>
-            </li>
-          </ul>
-        </a>
-      </section>
+            </a>
+          </li>
+        </ul>
+      </a>
+    </section>
       <!-- Блок о нас -->
       <section class="about">
         <h2 class="about_title">О нас</h2>
@@ -318,7 +321,7 @@
       <section class="main_footer_tel">
         <h2 class="visually_hidden">Телефон</h2>
         <address class="main_footer_adress">
-          <a class="contacts_phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="contacts_phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
 
         <a class="main_footer_copy" href="#">

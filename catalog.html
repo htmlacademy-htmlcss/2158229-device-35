@@ -15,7 +15,7 @@
       <!-- Шапка верхняя с поиском и управлением -->
       <ul class="main_header_controls">
         <li class="main_header_controls_item">
-          <form class="main_header_find"  action="https://echo.htmlacademy.ru/" method="get">
+          <form class="main_header_find"  action="https://echo.htmlacademy.ru/" method="submit">
             <input type="text" placeholder="Поиск по сайту">
               <button class="main_header_controls_button" type="button">
                 Найти
@@ -24,8 +24,9 @@
         </li>
 
         <li class="main_header_controls_item">
+          <a class="main_header_login" href="#">Коля Петухов</a>
           <button class="main_header_controls_button" type="button">
-            Войти
+            Выйти
           </button>
         </li>
 
@@ -40,7 +41,7 @@
       </ul>
       <!-- Шапка нижняя с навигацией -->
       <nav class="main_header_navigation">
-        <button class="main_header_navigation_button">Каталог товаров</button>
+        <a class="main_header_navigation_link" href="#">Каталог товаров</a>
 
         <ul class="main_header_navigation_list">
           <li class="main_header_navigation_item">
@@ -78,6 +79,16 @@
 
         <form class="catalog_filter" action="https://echo.htmlacademy.ru/" method="get">
           <!-- Фильтры -->
+          <h3 class="visually_hidden">Фильтр:</h2>
+
+          <fieldset class="catalog_filter_group">
+            <legend class="catalog_filter_title">Стоимость</legend>
+
+            <input type="range" min="0" max="9000" steps="590" value="590" steps="500" value="500">
+            <span class="catalog_filter_min">от 0</span>
+            <span class="catalog_filter_max">до 5000</span>
+          </fieldset>
+
           <fieldset class="catalog_filter_group">
             <legend class="catalog_filter_title">Цвет</legend>
             <ul class="catalog_filter_list">
@@ -114,7 +125,7 @@
               </ul>
           </fieldset>
 
-          <fieldset class="catalog_filter_lgroup">
+          <fieldset class="catalog_filter_group">
             <legend class="catalog_filter_title">Bluetooth</legend>
             <ul class="catalog_filter_list">
               <li class="catalog_filter_item">
@@ -136,16 +147,18 @@
         </form>
         <!-- Сортировка по возрастанию и убыванию-->
         <select class="select_control" aria-label="Сортировка">
-          <option value="popular">Популярное</option>
+          <option value="popular">Популярные</option>
           <option value="cheap">Цена</option>
         </select>
 
-        <a href="#" class="button">
-          <span class="visually_hidden">По возрастанию</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually_hidden">По убыванию</span>
-        </a>
+        <div class="product_sort">
+          <a href="#" class="button">
+            <span class="visually_hidden">По возрастанию</span>
+          </a>
+          <a class="button" href="#">
+            <span class="visually_hidden">По убыванию</span>
+          </a>
+        </div>
         <!-- Карточки товара -->
         <ul class="product_list">
           <li class="product_card">
