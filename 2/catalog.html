@@ -16,8 +16,8 @@
       <!-- Шапка верхняя с поиском и управлением -->
       <ul class="main_header_controls">
         <li class="main_header_controls_item">
-          <form>
-            <input type="text">
+          <form class="main_header_find"  action="https://echo.htmlacademy.ru/" method="get">
+            <input type="text" placeholder="Поиск по сайту">
               <button class="main_header_controls_button" type="button">
                 Найти
               </button>
@@ -35,16 +35,13 @@
         </li>
 
         <li class="main_header_controls_item">
+          <span class="main_header_controls_busket">2</span>
           <a class="main_header_controls_link" href="#">Корзина</a>
         </li>
       </ul>
       <!-- Шапка нижняя с навигацией -->
       <nav class="main_header_navigation">
-        <ul class="main_header_navigation_list">
-          <li class="main_header_navigation_item">
-            <button class="main_header_navigation_button">Каталог товаров</button>
-          </li>
-        </ul>
+        <button class="main_header_navigation_button">Каталог товаров</button>
 
         <ul class="main_header_navigation_list">
           <li class="main_header_navigation_item">
@@ -155,40 +152,32 @@
           <li class="product_card">
             <a class="product_card_link" href="product.html">
               <img class="product_card_image" src="#" alt="">
-            </a>
-            <a class="product_card_button button" href="#">
               <h3 class="product_card_title">Любительская селфи-палка</h3>
-              <b class="product_card_price">500 ₽</b>
+              <span class="product_card_price">500 ₽</span>
             </a>
           </li>
 
           <li class="product_card">
             <a class="product_card_link" href="product.html">
               <img class="product_card_image" src="#" alt="">
-            </a>
-            <a class="product_card_button button" href="#">
               <h3 class="product_card_title">Профессиональная селфи-палка </h3>
-              <b class="product_card_price">1500 ₽</b>
+              <span class="product_card_price">1500 ₽</span>
             </a>
           </li>
 
           <li class="product_card">
             <a class="product_card_link" href="product.html">
               <img class="product_card_image" src="#" alt="">
-            </a>
-            <a class="product_card_button button" href="#">
               <h3 class="product_card_title">Непотопляемая селфи-палка</h3>
-              <b class="product_card_price">2500 ₽</b>
+              <span class="product_card_price">2500 ₽</span>
             </a>
           </li>
 
           <li class="product_card">
             <a class="product_card_link" href="product.html">
               <img class="product_card_image" src="#" alt="">
-            </a>
-            <a class="product_card_button button" href="#">
               <h3 class="product_card_title">Селфи-палка «Следуй за мной»</h3>
-              <b class="product_card_price">1500 ₽</b>
+              <span class="product_card_price">1500 ₽</span>
             </a>
           </li>
         </ul>
@@ -211,10 +200,10 @@
             <a class="pagination_link" href="#">3</a>
           </li>
           <li class="pagination_item">
-            <a class="pagination_link" href="#">4</a>
+            <a class="pagination_link" href="#">...</a>
           </li>
           <li class="pagination_item">
-            <a class="pagination_link" href="#">5</a>
+            <a class="pagination_link" href="#">15</a>
           </li>
           <li class="pagination_item">
             <a class="pagination_link pagination_next" href="#">
@@ -279,7 +268,7 @@
       <section class="main_footer_tel">
         <h2 class="visually_hidden">Телефон</h2>
         <address class="main_footer_adress">
-          <a class="contacts_phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="contacts_phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
 
         <a class="main_footer_copy" href="#">
