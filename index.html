@@ -15,11 +15,11 @@
       <!-- Шапка верхняя с поиском и управлением -->
       <ul class="main_header_controls">
         <li class="main_header_controls_item">
-          <form class="main_header_find"  action="https://echo.htmlacademy.ru/" method="submit">
+          <form class="main_header_find"  action="https://echo.htmlacademy.ru/" method="post">
             <input type="text" placeholder="Поиск по сайту">
-              <button class="main_header_controls_button" type="button">
-                Найти
-              </button>
+            <button class="main_header_controls_button" type="submit">
+              Найти
+            </button>
           </form>
         </li>
 
@@ -62,12 +62,12 @@
       <!-- Главный слайдер с товарами -->
       <section class="slider">
         <h2 class="visually_hidden">Главный слайдер с товарами</h2>
-
+        <!-- Товар #1 -->
         <div class="slider_left">
           <button class="slider_button slider_prev" type="button">
             <span class="visually_hidden">Предыдущий товар</span>
           </button>
-          <img class="slider_image" src="#" alt="Товары" >
+          <img class="slider_image" src="images/slider-1.png" width="560" height="560" alt="Товары. Квадрокоптер" >
 
           <button class="slider_button slider_next" type="button">
             <span class="visually_hidden">Следующий товар</span>
@@ -87,6 +87,63 @@
             <tr>
               <td><b class="slider_features">800 м</b></td>
               <td><b class="slider_features">50 м</b></td>
+            </tr>
+          </table>
+        </div>
+        <!-- Товар #2 -->
+        <div class="slider_left">
+          <button class="slider_button slider_prev" type="button">
+            <span class="visually_hidden">Предыдущий товар</span>
+          </button>
+          <img class="slider_image" src="images/slider-2.png" width="560" height="560" alt="Товары. Фитнес-браслет" >
+
+          <button class="slider_button slider_next" type="button">
+            <span class="visually_hidden">Следующий товар</span>
+          </button>
+        </div>
+
+        <div class="slider_right">
+          <b class="slider_number">02</b>
+          <b class="slider_slogan">Худеем правильно!</b>
+          <span class="slider_text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</span>
+          <a class="slider_link" href="#">Подробнее</a>
+          <table>
+            <tr>
+              <td>Без подзарядки</td>
+            </tr>
+            <tr>
+              <td><b class="slider_features">48 часов</b></td>
+            </tr>
+          </table>
+        </div>
+        <!-- Товар #3 -->
+        <div class="slider_left">
+          <button class="slider_button slider_prev" type="button">
+            <span class="visually_hidden">Предыдущий товар</span>
+          </button>
+          <img class="slider_image" src="images/slider-3.png" width="560" height="560" alt="Товары. Селфи-палка" >
+
+          <button class="slider_button slider_next" type="button">
+            <span class="visually_hidden">Следующий товар</span>
+          </button>
+        </div>
+
+        <div class="slider_right">
+          <b class="slider_number">03</b>
+          <b class="slider_slogan">Делай селфи, как Бен Стиллер!</b>
+          <span class="slider_text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+          </span>
+          <a class="slider_link" href="#">Подробнее</a>
+          <table>
+            <tr>
+              <td>Длина палки</td>
+              <td>Вес палки</td>
+              <td>Материал</td>
+            </tr>
+            <tr>
+              <td><b class="slider_features">8,5 м</b></td>
+              <td><b class="slider_features">5 кг</b></td>
+              <td><b class="slider_features">Карбон</b></td>
             </tr>
           </table>
         </div>
@@ -119,7 +176,7 @@
             <a class="showcase_link" href="#">
               <h3 class="showcase_title">Виртуальная реальность</h3>
               <div class="showcase_frame">
-                <img src="images/" alt="Иконка виртуальной реальности">
+                <img src="images/showcase_1.svg" width="97" height="55" alt="Иконка виртуальной реальности">
               </div>
             </a>
           </li>
@@ -128,7 +185,7 @@
             <a class="showcase_link" href="#">
               <h3 class="showcase_title">Моноподы для селфи</h3>
               <div class="showcase_frame">
-                <img src="images/" alt="Иконка моноподов для селфи">
+                <img src="images/showcase_2.svg" width="86" height="117" alt="Иконка моноподов для селфи">
               </div>
             </a>
           </li>
@@ -137,7 +194,7 @@
             <a class="showcase_link" href="#">
               <h3 class="showcase_title">Экшн-камеры</h3>
               <div class="showcase_frame">
-                <img src="images/" alt="Иконка экшн-камер">
+                <img src="images/showcase_3.svg" width="71" height="87" alt="Иконка экшн-камер">
               </div>
             </a>
           </li>
@@ -146,7 +203,7 @@
             <a class="showcase_link" href="#">
               <h3 class="showcase_title">Фитнес-браслеты</h3>
               <div class="showcase_frame">
-                <img src="images/" alt="Иконка фитнес-браслетов">
+                <img src="images/showcase_4.svg" width="107" height="65" alt="Иконка фитнес-браслетов">
               </div>
             </a>
           </li>
@@ -155,7 +212,7 @@
             <a class="showcase_link" href="#">
               <h3 class="showcase_title">Умные часы</h3>
               <div class="showcase_frame">
-                <img src="images/" alt="Иконка умных часов">
+                <img src="images/showcase_5.svg" width="56" height="98" alt="Иконка умных часов">
               </div>
             </a>
           </li>
@@ -164,7 +221,7 @@
             <a class="showcase_link" href="#">
               <h3 class="showcase_title">Квадрокоптеры</h3>
               <div class="showcase_frame">
-                <img src="images/" alt="Иконка квадрокоптеров">
+                <img src="images/showcase_6.svg" width="132" height="69" alt="Иконка квадрокоптеров">
               </div>
             </a>
           </li>
@@ -195,28 +252,35 @@
         <div class="delivery_carousel">
           <h3 class="delivery_carousel_title">Доставка</h3>
           <p class="delivery_carousel_text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <img src="images/delivery_man.svg" width="136" height="164" alt="">
+        </div>
+
+
+        <div class="delivery_carousel">
+          <h3 class="delivery_carousel_title">Гарантия</h3>
+          <p class="delivery_carousel_text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          <img src="images/delivery_garantee.svg" width="136" height="164" alt="">
+        </div>
+
+        <div class="delivery_carousel">
+          <h3 class="delivery_carousel_title">Кредит</h3>
+          <p class="delivery_carousel_text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+          <img src="images/delivery_credit.svg" width="136" height="164" alt="">
         </div>
 
       </section>
       <!-- Кнопка вызова формы доставки -->
       <section class="delivery_form">
         <h2 class="visually_hidden">Кнопка вызова формы доставки</h2>
-        <ul class="delivery_form_list">
-          <li class="delivery_form_item">
-            <img src="images/" alt="Иконка доставки">
-          </li>
-          <li class="delivery_form_item">
-            Доставим редкий товар под заказ
-          </li>
-          <li class="delivery_form_item">
-            <a class="delivery_form_link" href="#">
-              <span class="visually_hidden">Информация</span>
-              <span class="delivery_form_info">i</span>
-            </a>
-          </li>
-        </ul>
-      </a>
-    </section>
+        <a class="delivery_form_link" href="#">
+          <img src="images/delivery_car.svg" alt="Иконка доставки">
+          <span class="delivery_form_info">Доставим редкий товар под заказ</span>
+          <div class="delivery_form_info">
+            <span class="visually_hidden">Информация</span>
+            <span class="delivery_form_info">i</span>
+          </div>
+        </a>
+      </section>
       <!-- Блок о нас -->
       <section class="about">
         <h2 class="about_title">О нас</h2>
@@ -260,9 +324,9 @@
 
         <form class="subscribe_form" action="https://echo.htmlacademy.ru/" method="post">
           <input type="email" id="email" name="email" placeholder="Ваш e-mail">
-            <button class="button" type="submit">
-              Подписаться
-            </button>
+          <button class="button" type="submit">
+            Подписаться
+          </button>
         </form>
 
         <p class="subscribe_text"><em>Это бесплатно</em></p>
