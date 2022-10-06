@@ -1,3 +1,4 @@
+/* Шрифты */
 @font-face {
   font-family: "Rubik";
   font-style: normal;
@@ -20,23 +21,4 @@
   font-weight: 800;
   src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
   font-display: swap;
-}
-
-body {
-  font-family: "Rubik", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  color: #444444;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Raleway", "Arial", sans-serif;
-  color: #000000;
-}
-
-b {
-  font-family: "Raleway", "Arial", sans-serif;
 }
