@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Интернет-магазин «Девайс»</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <!-- Шапка сайта -->
@@ -62,16 +63,17 @@
       <!-- Главный слайдер с товарами -->
       <section class="slider">
         <h2 class="visually_hidden">Главный слайдер с товарами</h2>
+        <!-- Стрелка назад -->
+        <button class="slider_button slider_prev" type="button">
+          <span class="visually_hidden">Предыдущий товар</span>
+        </button>
+        <!-- Стрелка вперёд -->
+        <button class="slider_button slider_next" type="button">
+          <span class="visually_hidden">Следующий товар</span>
+        </button>
         <!-- Товар #1 -->
         <div class="slider_left">
-          <button class="slider_button slider_prev" type="button">
-            <span class="visually_hidden">Предыдущий товар</span>
-          </button>
           <img class="slider_image" src="images/slider-1.png" width="560" height="560" alt="Товары. Квадрокоптер" >
-
-          <button class="slider_button slider_next" type="button">
-            <span class="visually_hidden">Следующий товар</span>
-          </button>
         </div>
 
         <div class="slider_right">
@@ -92,14 +94,7 @@
         </div>
         <!-- Товар #2 -->
         <div class="slider_left">
-          <button class="slider_button slider_prev" type="button">
-            <span class="visually_hidden">Предыдущий товар</span>
-          </button>
-          <img class="slider_image" src="images/slider-2.png" width="560" height="560" alt="Товары. Фитнес-браслет" >
-
-          <button class="slider_button slider_next" type="button">
-            <span class="visually_hidden">Следующий товар</span>
-          </button>
+           <img class="slider_image" src="images/slider-2.png" width="560" height="560" alt="Товары. Фитнес-браслет" >
         </div>
 
         <div class="slider_right">
@@ -118,14 +113,7 @@
         </div>
         <!-- Товар #3 -->
         <div class="slider_left">
-          <button class="slider_button slider_prev" type="button">
-            <span class="visually_hidden">Предыдущий товар</span>
-          </button>
-          <img class="slider_image" src="images/slider-3.png" width="560" height="560" alt="Товары. Селфи-палка" >
-
-          <button class="slider_button slider_next" type="button">
-            <span class="visually_hidden">Следующий товар</span>
-          </button>
+           <img class="slider_image" src="images/slider-3.png" width="560" height="560" alt="Товары. Селфи-палка" >
         </div>
 
         <div class="slider_right">
@@ -388,7 +376,7 @@
           <a class="contacts_phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
 
-        <a class="main_footer_copy" href="#">
+        <a class="main_footer_copy" href="https://htmlacademy.ru/">
           <img src="images/html.png" width="115" height="33" alt="Разработано в html academy">
         </a>
       </section>

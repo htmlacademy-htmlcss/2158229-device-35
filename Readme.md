@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Николай Дидур](https://up.htmlacademy.ru/htmlcss/35/user/2158229).
-* Наставник: [Михаил Колотович](https://htmlacademy.ru/profile/id225353).
+* Наставник: [Павел Нюкало](https://htmlacademy.ru/profile/id869225).
 
 ---
 
