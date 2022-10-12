@@ -18,18 +18,19 @@
         <li class="main_header_controls_item">
           <form class="main_header_find"  action="https://echo.htmlacademy.ru/" method="post">
             <input type="text" placeholder="Поиск по сайту">
-            <button class="main_header_controls_button" type="submit">
+            <button class="main_header_controls_button main_header_find_button" type="submit">
               Найти
             </button>
           </form>
         </li>
 
         <li class="main_header_controls_item">
-          <a class="main_header_login" href="#">Коля Петухов</a>
-          <button class="main_header_controls_button" type="button">
+          <a class="main_header_controls_link" href="#">Коля Петухов</a>
+          <button class="main_header_login main_header_controls_button" type="button">
             Выйти
           </button>
         </li>
+
 
         <li class="main_header_controls_item">
           <a class="main_header_controls_link" href="#">Сравнить</a>
@@ -42,17 +43,17 @@
       </ul>
       <!-- Шапка нижняя с навигацией -->
       <nav class="main_header_navigation">
-        <a class="main_header_navigation_link" href="#">Каталог товаров</a>
+        <a class="main_header_navigation_link main_link" href="#">Каталог товаров</a>
 
         <ul class="main_header_navigation_list">
           <li class="main_header_navigation_item">
-            <a class="main_header_navigation_link" href="#">Доставка</a>
+            <a class="main_header_navigation_link main_link" href="#">Доставка</a>
           </li>
           <li class="main_header_navigation_item">
-            <a class="main_header_navigation_link" href="#">Гарантия</a>
+            <a class="main_header_navigation_link main_link" href="#">Гарантия</a>
           </li>
           <li class="main_header_navigation_item">
-            <a class="main_header_navigation_link" href="#">Контакты</a>
+            <a class="main_header_navigation_link main_link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -80,7 +81,7 @@
 
         <form class="catalog_filter" action="https://echo.htmlacademy.ru/" method="get">
           <!-- Фильтры -->
-          <h3 class="visually_hidden">Фильтр:</h3>
+          <h3 class="catalog_products_title">Фильтр:</h3>
 
           <fieldset class="catalog_filter_group">
             <legend class="catalog_filter_title">Стоимость</legend>
@@ -94,31 +95,31 @@
             <legend class="catalog_filter_title">Цвет</legend>
             <ul class="catalog_filter_list">
               <li class="catalog_filter_item">
-                <label class="control">
+                <label class="catalog_filter_control">
                   <input class="control_input" type="checkbox" name="black" checked>
                   Чёрный
                 </label>
               </li>
               <li class="catalog_filter_item">
-                <label class="control">
+                <label class="catalog_filter_control">
                   <input class="control_input" type="checkbox" name="white" checked>
                   Белый
                 </label>
               </li>
               <li class="catalog_filter_item">
-                <label class="control">
+                <label class="catalog_filter_control">
                   <input class="control_input" type="checkbox" name="blue">
                   Синий
                 </label>
               </li>
               <li class="catalog_filter_item">
-                <label class="control">
+                <label class="catalog_filter_control">
                   <input class="control_input" type="checkbox" name="red">
                   Красный
                 </label>
               </li>
               <li class="catalog_filter_item">
-                <label class="control">
+                <label class="catalog_filter_control">
                   <input class="control_input" type="checkbox" name="pink">
                   Розовый
                 </label>
@@ -130,13 +131,13 @@
             <legend class="catalog_filter_title">Bluetooth</legend>
             <ul class="catalog_filter_list">
               <li class="catalog_filter_item">
-                <label class="control">
+                <label class="catalog_filter_control">
                   <input class="control_input" type="radio" name="bluetooth" value="yes" checked>
                    Есть
                 </label>
               </li>
               <li class="catalog_filter_item">
-                <label class="control">
+                <label class="catalog_filter_control">
                   <input class="control_input" type="radio" name="bluetooth" value="no">
                    Нет
                 </label>
@@ -144,87 +145,89 @@
             </ul>
           </fieldset>
 
-          <button class="button" type="submit">Показать</button>
+          <button class="main_button_catalog" type="submit">Показать</button>
         </form>
         <!-- Сортировка по возрастанию и убыванию-->
+        <h3 class="catalog_products_title">Сортировка:</h3>
         <select class="select_control" aria-label="Сортировка">
           <option value="popular">Популярные</option>
           <option value="cheap">Цена</option>
         </select>
 
         <div class="product_sort">
-          <a href="#" class="button">
-            <span class="visually_hidden">По возрастанию</span>
+          <a href="#" class="button_sort">
+            <img src="../images/sort_up.svg" alt="По возрастанию" class="product_sort_up">
           </a>
-          <a class="button" href="#">
-            <span class="visually_hidden">По убыванию</span>
+          <a href="#" class="button_sort">
+            <img src="../images/sort_down.svg" alt="По убыванию" class="product_sort_down">
           </a>
         </div>
         <!-- Карточки товара -->
-        <ul class="product_list">
-          <li class="product_card">
-            <a class="product_card_link" href="product.html">
-              <img class="product_card_image" src="images/catalog/product_1.jpg" alt="">
-              <h3 class="product_card_title">Любительская селфи-палка</h3>
-              <span class="product_card_price">500 ₽</span>
-            </a>
-          </li>
+        <div class="product_list_wrapper">
+          <ul class="product_list">
+            <li class="product_card">
+              <a class="product_card_link" href="product.html">
+                <img class="product_card_image" src="images/catalog/product_1.jpg" alt="">
+                <h3 class="product_card_title">Любительская селфи-палка</h3>
+                <span class="product_card_price">500 ₽</span>
+              </a>
+            </li>
 
-          <li class="product_card">
-            <a class="product_card_link" href="product.html">
-              <img class="product_card_image" src="images/catalog/product_2.jpg" alt="">
-              <h3 class="product_card_title">Профессиональная селфи-палка </h3>
-              <span class="product_card_price">1500 ₽</span>
-            </a>
-          </li>
+            <li class="product_card">
+              <a class="product_card_link" href="product.html">
+                <img class="product_card_image" src="images/catalog/product_2.jpg" alt="">
+                <h3 class="product_card_title">Профессиональная селфи-палка </h3>
+                <span class="product_card_price">1500 ₽</span>
+              </a>
+            </li>
 
-          <li class="product_card">
-            <a class="product_card_link" href="product.html">
-              <img class="product_card_image" src="images/catalog/product_3.jpg" alt="">
-              <h3 class="product_card_title">Непотопляемая селфи-палка</h3>
-              <span class="product_card_price">2500 ₽</span>
-            </a>
-          </li>
+            <li class="product_card">
+              <a class="product_card_link" href="product.html">
+                <img class="product_card_image" src="images/catalog/product_3.jpg" alt="">
+                <h3 class="product_card_title">Непотопляемая селфи-палка</h3>
+                <span class="product_card_price">2500 ₽</span>
+              </a>
+            </li>
 
-          <li class="product_card">
-            <a class="product_card_link" href="product.html">
-              <img class="product_card_image" src="images/catalog/product_4.jpg" alt="">
-              <h3 class="product_card_title">Селфи-палка «Следуй за мной»</h3>
-              <span class="product_card_price">1500 ₽</span>
-            </a>
-          </li>
-        </ul>
+            <li class="product_card">
+              <a class="product_card_link" href="product.html">
+                <img class="product_card_image" src="images/catalog/product_4.jpg" alt="">
+                <h3 class="product_card_title">Селфи-палка «Следуй за мной»</h3>
+                <span class="product_card_price">1500 ₽</span>
+              </a>
+            </li>
+          </ul>
           <!-- Кнопка «Загрузить ещё» -->
-        <button class="button pagination_show_more" type="button">Загрузить ещё</button>
-        <!-- Пагинация -->
-        <ul class="pagination">
-          <li class="pagination_item">
-            <a class="pagination_link pagination_prev pagination_disabled">
-              <span class="pagination_text">Назад</span>
-            </a>
-          </li>
-          <li class="pagination_item">
-            <a class="pagination_link pagination_current">1</a>
-          </li>
-          <li class="pagination_item">
-            <a class="pagination_link" href="#">2</a>
-          </li>
-          <li class="pagination_item">
-            <a class="pagination_link" href="#">3</a>
-          </li>
-          <li class="pagination_item">
-            <a class="pagination_link" href="#">...</a>
-          </li>
-          <li class="pagination_item">
-            <a class="pagination_link" href="#">15</a>
-          </li>
-          <li class="pagination_item">
-            <a class="pagination_link pagination_next" href="#">
-              <span class="pagination_text">Вперёд</span>
-            </a>
-          </li>
-        </ul>
-
+          <button class="main_button_catalog pagination_show_more" type="button">Загрузить ещё</button>
+          <!-- Пагинация -->
+          <ul class="pagination">
+            <li class="pagination_item">
+              <a class="pagination_link pagination_prev pagination_disabled">
+                <span class="pagination_text">Назад</span>
+              </a>
+            </li>
+            <li class="pagination_item">
+              <a class="pagination_link pagination_current">1</a>
+            </li>
+            <li class="pagination_item">
+              <a class="pagination_link" href="#">2</a>
+            </li>
+            <li class="pagination_item">
+              <a class="pagination_link" href="#">3</a>
+            </li>
+            <li class="pagination_item">
+              <a class="pagination_link" href="#">...</a>
+            </li>
+            <li class="pagination_item">
+              <a class="pagination_link" href="#">15</a>
+            </li>
+            <li class="pagination_item">
+              <a class="pagination_link pagination_next" href="#">
+                <span class="pagination_text">Вперёд</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
 
     </main>
@@ -241,7 +244,7 @@
           <p class="main_footer_address_text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
 
-        <p class="main_footer_address_line">—</p>
+        <div class="main_footer_line_yellow"></div>
       </section>
       <!-- Блок подвала с навигацией -->
       <section class="main_footer_navigation">
@@ -249,13 +252,13 @@
 
         <ul class="main_footer_navigation_list">
           <li class="main_footer_navigation_item">
-            <a class="main_footer_navigation_link" href="#">Доставка</a>
+            <a class="main_footer_navigation_link main_link" href="#">Доставка</a>
           </li>
           <li class="main_footer_navigation_item">
-            <a class="main_footer_navigation_link" href="#">Гарантия</a>
+            <a class="main_footer_navigation_link main_link" href="#">Гарантия</a>
           </li>
           <li class="main_footer_navigation_item">
-            <a class="main_footer_navigation_link" href="#">Контакты</a>
+            <a class="main_footer_navigation_link main_link" href="#">Контакты</a>
           </li>
         </ul>
 
