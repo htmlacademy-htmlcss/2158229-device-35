@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Интернет-магазин «Девайс»</title>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -18,14 +19,14 @@
         <li class="main_header_controls_item">
           <form class="main_header_find"  action="https://echo.htmlacademy.ru/" method="post">
             <input type="text" placeholder="Поиск по сайту">
-            <button class="main_header_controls_button" type="submit">
+            <button class="main_header_controls_button main_header_find_button" type="submit">
               Найти
             </button>
           </form>
         </li>
 
         <li class="main_header_controls_item">
-          <button class="main_header_controls_button" type="button">
+          <button class="main_header_controls_button main_header_login" type="button">
             Войти
           </button>
         </li>
@@ -41,17 +42,17 @@
       </ul>
       <!-- Шапка нижняя с навигацией -->
       <nav class="main_header_navigation">
-        <a class="main_header_navigation_link" href="#">Каталог товаров</a>
+        <a class="main_header_navigation_link main_link" href="#">Каталог товаров</a>
 
         <ul class="main_header_navigation_list">
           <li class="main_header_navigation_item">
-            <a class="main_header_navigation_link" href="#">Доставка</a>
+            <a class="main_header_navigation_link main_link" href="#">Доставка</a>
           </li>
           <li class="main_header_navigation_item">
-            <a class="main_header_navigation_link" href="#">Гарантия</a>
+            <a class="main_header_navigation_link main_link" href="#">Гарантия</a>
           </li>
           <li class="main_header_navigation_item">
-            <a class="main_header_navigation_link" href="#">Контакты</a>
+            <a class="main_header_navigation_link main_link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -63,25 +64,14 @@
       <!-- Главный слайдер с товарами -->
       <section class="slider">
         <h2 class="visually_hidden">Главный слайдер с товарами</h2>
-        <!-- Стрелка назад -->
-        <button class="slider_button slider_prev" type="button">
-          <span class="visually_hidden">Предыдущий товар</span>
-        </button>
-        <!-- Стрелка вперёд -->
-        <button class="slider_button slider_next" type="button">
-          <span class="visually_hidden">Следующий товар</span>
-        </button>
         <!-- Товар #1 -->
-        <div class="slider_left">
-          <img class="slider_image" src="images/slider-1.png" width="560" height="560" alt="Товары. Квадрокоптер" >
-        </div>
-
-        <div class="slider_right">
+        <div class="slider">
           <b class="slider_number">01</b>
+          <img class="slider_image" src="images/slider-1.png" width="560" height="560" alt="Товары. Квадрокоптер" >
           <b class="slider_slogan">Порхает как бабочка, жалит как пчела!</b>
           <span class="slider_text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</span>
-          <a class="slider_link" href="#">Подробнее</a>
-          <table>
+          <a class="slider_link main_link" href="#">Подробнее</a>
+          <table class="slider_table">
             <tr>
               <td>Дальность полёта</td>
               <td>Радиус поражения</td>
@@ -92,13 +82,18 @@
             </tr>
           </table>
         </div>
+        <!-- Стрелка назад -->
+        <button class="slider_button slider_prev" type="button">
+          <span class="visually_hidden">Предыдущий товар</span>
+        </button>
+        <!-- Стрелка вперёд -->
+        <button class="slider_button slider_next" type="button">
+          <span class="visually_hidden">Следующий товар</span>
+        </button>
         <!-- Товар #2 -->
-        <div class="slider_left">
-           <img class="slider_image" src="images/slider-2.png" width="560" height="560" alt="Товары. Фитнес-браслет" >
-        </div>
-
-        <div class="slider_right">
+        <div class="slider">
           <b class="slider_number">02</b>
+          <img class="slider_image" src="images/slider-2.png" width="560" height="560" alt="Товары. Фитнес-браслет" >
           <b class="slider_slogan">Худеем правильно!</b>
           <span class="slider_text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</span>
           <a class="slider_link" href="#">Подробнее</a>
@@ -112,12 +107,9 @@
           </table>
         </div>
         <!-- Товар #3 -->
-        <div class="slider_left">
-           <img class="slider_image" src="images/slider-3.png" width="560" height="560" alt="Товары. Селфи-палка" >
-        </div>
-
-        <div class="slider_right">
+        <div class="slider">
           <b class="slider_number">03</b>
+          <img class="slider_image" src="images/slider-3.png" width="560" height="560" alt="Товары. Селфи-палка" >
           <b class="slider_slogan">Делай селфи, как Бен Стиллер!</b>
           <span class="slider_text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
           </span>
@@ -217,7 +209,7 @@
       </section>
       <!-- Карусель с доставкой -->
       <section class="delivery">
-        <h2 class="delivery_title">Доставка</h2>
+        <h2 class="visually_hidden">Доставка</h2>
 
         <ul class="delivery_list">
           <li class="delivery_item">
@@ -261,11 +253,13 @@
       <section class="delivery_form">
         <h2 class="visually_hidden">Кнопка вызова формы доставки</h2>
         <a class="delivery_form_link" href="#">
-          <img src="images/delivery_car.svg" alt="Иконка доставки">
+          <div class="delivery_form_img">
+            <img src="images/delivery_car.svg" alt="Иконка доставки.">
+          </div>
           <span class="delivery_form_info">Доставим редкий товар под заказ</span>
-          <div class="delivery_form_info">
+          <div class="delivery_form_button">
             <span class="visually_hidden">Информация</span>
-            <span class="delivery_form_info">i</span>
+            <span class="delivery_form_button_info">i</span>
           </div>
         </a>
       </section>
@@ -279,7 +273,7 @@
           <li class="about_item">СДИК</li>
           <li class="about_item">ТоксБерри</li>
         </ul>
-        <a class="about_link" href="mailto:">
+        <a class="about_link main_link" href="mailto:">
           Подробнее о нас
         </a>
       </section>
@@ -287,20 +281,20 @@
       <section class="contacts">
         <h2 class="contacts_title">Контакты</h2>
         <p class="contacts_text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
-        <h3 class="contacts_subtitle">Интернет-магазин «Девайс»</h3>
+        <h3 class="contacts_title_mini">Интернет-магазин «Девайс»</h3>
 
         <address class="contacts_address">
           <p class="contacts_address_text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           <a class="contacts_phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
 
-        <h3 class="contacts_subtitle">Время работы</h3>
+        <h3 class="contacts_title_mini">Время работы</h3>
         <ul class="contacts_schedule">
           <li class="contacts_schedule_item">пн—пт: с 10:00 до 22:00</li>
           <li class="contacts_schedule_item">сб—вс: с 10:00 до 19:00</li>
         </ul>
 
-        <a class="contacts_link" href="mailto:">
+        <a class="contacts_link main_link" href="mailto:">
           Напишите нам
         </a>
       </section>
@@ -312,12 +306,12 @@
 
         <form class="subscribe_form" action="https://echo.htmlacademy.ru/" method="post">
           <input type="email" id="email" name="email" placeholder="Ваш e-mail">
-          <button class="button" type="submit">
+          <button class="subscribe_button" type="submit">
             Подписаться
           </button>
         </form>
 
-        <p class="subscribe_text"><em>Это бесплатно</em></p>
+        <p class="subscribe_free"><em>Это бесплатно</em></p>
       </section>
     </main>
     <!-- Подвал сайта -->
@@ -333,7 +327,7 @@
           <p class="main_footer_address_text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
 
-        <p class="main_footer_address_line">—</p>
+        <div class="main_footer_line_yellow"></div>
       </section>
       <!-- Блок подвала с навигацией -->
       <section class="main_footer_navigation">
@@ -341,13 +335,13 @@
 
         <ul class="main_footer_navigation_list">
           <li class="main_footer_navigation_item">
-            <a class="main_footer_navigation_link" href="#">Доставка</a>
+            <a class="main_footer_navigation_link main_link" href="#">Доставка</a>
           </li>
           <li class="main_footer_navigation_item">
-            <a class="main_footer_navigation_link" href="#">Гарантия</a>
+            <a class="main_footer_navigation_link main_link" href="#">Гарантия</a>
           </li>
           <li class="main_footer_navigation_item">
-            <a class="main_footer_navigation_link" href="#">Контакты</a>
+            <a class="main_footer_navigation_link main_link" href="#">Контакты</a>
           </li>
         </ul>
 
@@ -359,7 +353,7 @@
           </li>
           <li class="main_footer_navigation_social_item">
             <a class="main_footer_navigation_social_link" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Ютуб</span>
+              <span class="visually_hidden">Ютуб</span>
             </a>
           </li>
           <li class="main_footer_navigation_social_item">
@@ -373,7 +367,7 @@
       <section class="main_footer_tel">
         <h2 class="visually_hidden">Телефон</h2>
         <address class="main_footer_adress">
-          <a class="contacts_phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="main_footer_tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
 
         <a class="main_footer_copy" href="https://htmlacademy.ru/">
