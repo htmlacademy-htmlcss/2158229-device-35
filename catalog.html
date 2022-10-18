@@ -12,27 +12,32 @@
     <header class="main_header">
       <!-- Логотип -->
       <a class="main_header_logo_link" href="index.html">
-        <img src="images/logo.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">
+        <img src="images/logo.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс».">
       </a>
       <!-- Шапка верхняя с поиском и управлением -->
-      <ul class="main_header_controls">
-        <li class="main_header_controls_item">
-          <form class="main_header_find"  action="https://echo.htmlacademy.ru/" method="post">
-            <input type="text" placeholder="Поиск по сайту">
-            <button class="main_header_controls_button main_header_find_button" type="submit">
-              Найти
-            </button>
-          </form>
-        </li>
+      <div class="main_header_controls_wrapper">
+        <ul class="main_header_controls">
+          <li class="main_header_controls_item">
+            <form class="main_header_find"  action="https://echo.htmlacademy.ru/" method="post">
+              <input type="text" placeholder="Поиск по сайту">
+              <button class="main_header_controls_button main_header_find_button" type="submit">
+                Найти
+              </button>
+            </form>
+          </li>
 
         <li class="main_header_controls_item">
           <a class="main_header_controls_link" href="#">Коля Петухов</a>
-          <button class="main_header_login main_header_controls_button" type="button">
+        </li>
+
+        <li class="main_header_controls_item">
+          <button class="main_header_controls_button main_header_logout" type="button">
             Выйти
           </button>
         </li>
+      </ul>
 
-
+      <ul class="main_header_controls main_header_controls_right">
         <li class="main_header_controls_item">
           <a class="main_header_controls_link" href="#">Сравнить</a>
         </li>
@@ -42,24 +47,25 @@
           <a class="main_header_controls_link" href="#">Корзина</a>
         </li>
       </ul>
-      <!-- Шапка нижняя с навигацией -->
-      <nav class="main_header_navigation">
-        <a class="main_header_navigation_link main_link" href="#">Каталог товаров</a>
+    </div>
+    <!-- Шапка нижняя с навигацией -->
+    <nav class="main_header_navigation">
+      <a class="main_header_navigation_link main_link" href="#">Каталог товаров <img src="images/catalog.svg" width="50" height="50" alt="Раскрыть катлог товаров."></a>
 
-        <ul class="main_header_navigation_list">
-          <li class="main_header_navigation_item">
-            <a class="main_header_navigation_link main_link" href="#">Доставка</a>
-          </li>
-          <li class="main_header_navigation_item">
-            <a class="main_header_navigation_link main_link" href="#">Гарантия</a>
-          </li>
-          <li class="main_header_navigation_item">
-            <a class="main_header_navigation_link main_link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
 
-    </header>
+      <ul class="main_header_navigation_list">
+        <li class="main_header_navigation_item">
+          <a class="main_header_navigation_link main_link" href="#">Доставка</a>
+        </li>
+        <li class="main_header_navigation_item">
+          <a class="main_header_navigation_link main_link" href="#">Гарантия</a>
+        </li>
+        <li class="main_header_navigation_item">
+          <a class="main_header_navigation_link main_link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
     <!-- Основное содержимое страницы -->
     <main class="main_inner">
       <!-- Заголовок и хлебные крошки -->
@@ -157,10 +163,10 @@
 
         <div class="product_sort">
           <a href="#" class="button_sort">
-            <img src="images/sort_up.svg" alt="По возрастанию" class="product_sort_up">
+            <img src="images/sort_up.svg" alt="По возрастанию." class="product_sort_up">
           </a>
           <a href="#" class="button_sort">
-            <img src="images/sort_down.svg" alt="По убыванию" class="product_sort_down">
+            <img src="images/sort_down.svg" alt="По убыванию." class="product_sort_down">
           </a>
         </div>
         <!-- Карточки товара -->
@@ -234,64 +240,66 @@
     </main>
     <!-- Подвал сайта -->
     <footer class="main_footer">
-      <!-- Блок подвала с адресом -->
-      <section class="main_footer_adress">
-        <h2 class="visually_hidden">Адрес</h2>
-        <a class="main_footer_logo_link" href="index.html">
-          <img src="images/logo-y.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">
-        </a>
+      <div class="main_footer_wrapper">
+        <!-- Блок подвала с адресом -->
+        <section class="main_footer_adress">
+          <h2 class="visually_hidden">Адрес</h2>
+          <a class="main_footer_logo_link" href="index.html">
+            <img src="images/logo-y.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс».">
+          </a>
 
-        <address class="main_footer_address">
-          <p class="main_footer_address_text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-        </address>
+          <address class="main_footer_address">
+            <p class="main_footer_address_text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          </address>
 
-        <div class="main_footer_line_yellow"></div>
-      </section>
-      <!-- Блок подвала с навигацией -->
-      <section class="main_footer_navigation">
-        <h2 class="visually_hidden">Навигация</h2>
+          <div class="main_footer_line_yellow"></div>
+        </section>
+        <!-- Блок подвала с навигацией -->
+        <section class="main_footer_navigation">
+          <h2 class="visually_hidden">Навигация</h2>
 
-        <ul class="main_footer_navigation_list">
-          <li class="main_footer_navigation_item">
-            <a class="main_footer_navigation_link main_link" href="#">Доставка</a>
-          </li>
-          <li class="main_footer_navigation_item">
-            <a class="main_footer_navigation_link main_link" href="#">Гарантия</a>
-          </li>
-          <li class="main_footer_navigation_item">
-            <a class="main_footer_navigation_link main_link" href="#">Контакты</a>
-          </li>
-        </ul>
+          <ul class="main_footer_navigation_list">
+            <li class="main_footer_navigation_item">
+              <a class="main_footer_navigation_link main_link" href="#">Доставка</a>
+            </li>
+            <li class="main_footer_navigation_item">
+              <a class="main_footer_navigation_link main_link" href="#">Гарантия</a>
+            </li>
+            <li class="main_footer_navigation_item">
+              <a class="main_footer_navigation_link main_link" href="#">Контакты</a>
+            </li>
+          </ul>
 
-        <ul class="main_footer_navigation_social_list">
-          <li class="main_footer_navigation_social_item">
-            <a class="main_footer_navigation_social_link" href="https://t.me/htmlacademy">
-              <span class="visually_hidden">Телеграм</span>
-            </a>
-          </li>
-          <li class="main_footer_navigation_social_item">
-            <a class="main_footer_navigation_social_link" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually_hidden">Ютуб</span>
-            </a>
-          </li>
-          <li class="main_footer_navigation_social_item">
-            <a class="main_footer_navigation_social_link" href="https://twitter.com/htmlacademy_ru">
-              <span class="visually_hidden">Твиттер</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <!-- Блок подвала с телефоном -->
-      <section class="main_footer_tel">
-        <h2 class="visually_hidden">Телефон</h2>
-        <address class="main_footer_adress">
-          <a class="main_footer_tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </address>
+          <ul class="main_footer_navigation_social_list">
+            <li class="main_footer_navigation_social_item">
+              <a class="main_footer_navigation_social_link" href="https://t.me/htmlacademy">
+                <span class="visually_hidden">Телеграм</span>
+              </a>
+            </li>
+            <li class="main_footer_navigation_social_item">
+              <a class="main_footer_navigation_social_link" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually_hidden">Ютуб</span>
+              </a>
+            </li>
+            <li class="main_footer_navigation_social_item">
+              <a class="main_footer_navigation_social_link" href="https://twitter.com/htmlacademy_ru">
+                <span class="visually_hidden">Твиттер</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- Блок подвала с телефоном -->
+        <section class="main_footer_tel">
+          <h2 class="visually_hidden">Телефон</h2>
+          <address class="main_footer_adress">
+            <a class="main_footer_tel_link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          </address>
 
-        <a class="main_footer_copy" href="https://htmlacademy.ru/">
-          <img src="images/html.png" width="115" height="33" alt="Разработано в html academy">
-        </a>
-      </section>
+          <a class="main_footer_copy" href="https://htmlacademy.ru/">
+            <img src="images/html.png" width="115" height="33" alt="Разработано в html academy.">
+          </a>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
