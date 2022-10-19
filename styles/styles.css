@@ -86,7 +86,6 @@ body {
   border: 2px solid #000000;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-
 }
 .main_link {
   font-family: "Raleway", "Arial", sans-serif;
@@ -106,7 +105,6 @@ body {
   width: 1160px;
   background-color: #ffe17f;
   margin: 40px auto 0 auto;
-
 }
 .main_header_controls {
   display: flex;
@@ -165,6 +163,12 @@ body {
   display: flex;
   margin-top: -40px;
 }
+.slider_2_wrapper {
+  display: flex;
+}
+.slider_3_wrapper {
+  display: flex;
+}
 .slider_image {
   margin-top: -120px;
 }
@@ -200,13 +204,12 @@ body {
 }
 .slider_pagination {
   display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
 .slider_pagination_wrapper {
   width: 1160px;
-  position: relative;
-  left: 560px;
 }
 /* Витрина с товарами */
 .showcase {
@@ -247,7 +250,6 @@ body {
   margin: 0 auto;
   height: 319px;
   top: -30px;
-
 }
 .delivery_wrapper img {
   position: relative;
@@ -322,7 +324,7 @@ body {
   margin: 0 auto 70px auto;
 }
 .about_item::marker {
-  color:#ffc700;
+  color: #ffc700;
   font-size: 25px;
 }
 .about_item {
@@ -461,7 +463,12 @@ body {
   color: #ffffff;
 }
 /* Внутренняя страница */
+.inner_header_wrapper {
+  width: 1160px;
+  margin: 0 auto 34px auto;
+}
 .inner_header_title {
+  width: 1079px;
   font-family: "Raleway", "Arial", sans-serif;
   color: #000000;
   font-size: 50px;
@@ -480,11 +487,29 @@ body {
 /* Католог фон */
 .product_list_wrapper {
   background: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 78px;
 }
 .catalog_products {
-background: #f0f0f0;
+  background: #f0f0f0;
+}
+.catalog_products_wrapper {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+.catalog_products_container {
+  width: 840px;
 }
 /* Католог фильтр */
+.catalog_filter {
+  width: 320px;
+  padding: 30px;
+}
+.catalog_products_title_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 .catalog_filter_title,
 .product_card_title {
   font-weight: 700;
@@ -545,12 +570,23 @@ background: #f0f0f0;
   text-decoration: none;
 }
 .pagination_show_more {
+  display: block;
+  margin: 0 auto;
   background-color: #ffffff;
   border: 3px solid #f0f0f0;
+  width: 760px;
+  padding: 14px;
 }
 /* Пагинация */
+.pagination_wrapper {
+  width: 760px;
+}
 .pagination {
+  display: flex;
   background-color: #ebebeb;
+  padding: 15px;
+  margin: 20px;
+  justify-content: center;
 }
 
 .pagination_link {
@@ -562,7 +598,6 @@ background: #f0f0f0;
 
 .pagination_current {
   color: #444444;
-
 }
 .pagination_disabled {
   color: #c7c7c7;
