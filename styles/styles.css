@@ -152,8 +152,6 @@ body {
 .main_container {
   flex-grow: 1;
 }
-.main_index {
-}
 /* Слайдер */
 .slider {
   margin: 0 auto 70px auto;
@@ -397,7 +395,6 @@ body {
   cursor: pointer;
 }
 .subscribe_free {
-  display: inline-block;
   float: right;
 }
 .subscribe_free em {
