@@ -41,7 +41,6 @@ body {
   min-height: 100%;
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 30px;
   color: #444444;
 }
 /* Кнопки ВСЕ */
@@ -82,7 +81,7 @@ body {
 }
 .main_header_find input {
   width: 350px;
-  height: 34px;
+  height: 40px;
   font-family: inherit;
   background-color: #ffe17f;
   font-size: 16px;
@@ -95,7 +94,6 @@ body {
 .main_link {
   font-family: "Raleway", "Arial", sans-serif;
   color: #000000;
-  line-height: 21px;
   letter-spacing: 3px;
   text-align: center;
   text-decoration: none;
@@ -137,6 +135,12 @@ body {
   margin: 0;
   padding: 0;
   margin-left: auto;
+  align-items: center;
+}
+.main_header_navigation_link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
 }
 .main_header_controls_link {
   color: #000000;
@@ -161,6 +165,7 @@ body {
 .slider {
   margin: 0 auto 70px auto;
   width: 1160px;
+  line-height: 30px;
 }
 .slider_1_container,
 .slider_2_container,
@@ -253,6 +258,7 @@ body {
   background: #f0f0f0;
   height: 289px;
   margin-bottom: 70px;
+  line-height: 30px;
 }
 .delivery_carousel {
   display: none;
@@ -277,6 +283,7 @@ body {
   width: 452px;
   top: -45px;
   left: 116px;
+  line-height: 30px;
 }
 .delivery_carousel_title,
 .about_title,
@@ -335,6 +342,9 @@ body {
   align-items: center;
 }
 /* О нас и Контакты */
+.about {
+  line-height: 30px;
+}
 .about_wrapper {
   display: flex;
   width: 1160px;
@@ -350,6 +360,9 @@ body {
   line-height: 20px;
   color: #000000;
   padding-left: 10px;
+}
+.contacts {
+  line-height: 30px;
 }
 .contacts_title_mini {
   font-weight: 700;
@@ -369,6 +382,7 @@ body {
 /* Подписка */
 .subscribe {
   background: #f0f0f0;
+  line-height: 30px;
 }
 .subscribe_container {
   width: 1160px;
