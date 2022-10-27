@@ -25,12 +25,12 @@
             </form>
           </li>
 
-        <li class="main_header_controls_item">
+          <li class="main_header_controls_item">
           <a class="main_header_controls_link" href="#">Коля Петухов</a>
         </li>
 
         <li class="main_header_controls_item">
-          <button class="main_header_controls_button main_header_logout" type="button">
+          <button class="main_header_logout" type="button">
             Выйти
           </button>
         </li>
@@ -38,26 +38,29 @@
 
       <ul class="main_header_controls main_header_controls_right">
         <li class="main_header_controls_item">
-          <a class="main_header_controls_link" href="#">Сравнить</a>
+          <a class="main_header_controls_link main_header_controls_match" href="#">Сравнить</a>
         </li>
 
         <li class="main_header_controls_item">
-          <span class="main_header_controls_busket">2</span>
-          <a class="main_header_controls_link" href="#">Корзина</a>
+
+          <a class="main_header_controls_link main_header_controls_busket" href="#">Корзина</a>
         </li>
       </ul>
     </div>
     <!-- Шапка нижняя с навигацией -->
     <nav class="main_header_navigation">
-      <a class="main_header_navigation_link main_link" href="#">Каталог товаров <img src="images/catalog.svg" width="50" height="50" alt="Раскрыть катлог товаров."></a>
+      <a class="main_header_navigation_link main_link" href="#">Каталог товаров</a>
+      <a class="main_header_navigation_catalog" href="#">
+        <img class="main_header_navigation_img" src="images/catalog.svg" width="50" height="50" alt="Раскрыть катлог товаров.">
+      </a>
 
 
       <ul class="main_header_navigation_list">
         <li class="main_header_navigation_item">
-          <a class="main_header_navigation_link main_link" href="#">Доставка</a>
+          <a class="main_header_navigation_link main_link main_link_header" href="#">Доставка</a>
         </li>
         <li class="main_header_navigation_item">
-          <a class="main_header_navigation_link main_link" href="#">Гарантия</a>
+          <a class="main_header_navigation_link main_link main_link_header" href="#">Гарантия</a>
         </li>
         <li class="main_header_navigation_item">
           <a class="main_header_navigation_link main_link" href="#">Контакты</a>
@@ -212,35 +215,31 @@
               <!-- Кнопка «Загрузить ещё» -->
               <button class="main_button_catalog pagination_show_more" type="button">Загрузить ещё</button>
               <!-- Пагинация -->
-              <div class="pagination_wrapper"></div>
-              <ul class="pagination">
-                <li class="pagination_item">
-                  <a class="pagination_link pagination_prev pagination_disabled">
-                    <span class="pagination_text">Назад</span>
-                  </a>
-                </li>
-                <li class="pagination_item">
-                  <a class="pagination_link pagination_current">1</a>
-                </li>
-                <li class="pagination_item">
-                  <a class="pagination_link" href="#">2</a>
-                </li>
-                <li class="pagination_item">
-                  <a class="pagination_link" href="#">3</a>
-                </li>
-                <li class="pagination_item">
-                  <a class="pagination_link" href="#">...</a>
-                </li>
-                <li class="pagination_item">
-                  <a class="pagination_link" href="#">15</a>
-                </li>
-                <li class="pagination_item">
-                  <a class="pagination_link pagination_next" href="#">
-                    <span class="pagination_text">Вперёд</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <div class="pagination_wrapper">
+                <a class="pagination_link pagination_prev pagination_disabled">
+                  <span class="pagination_text pagination_back">Назад</span>
+                </a>
+                <ul class="pagination">
+                  <li class="pagination_item">
+                    <a class="pagination_link pagination_current">1</a>
+                  </li>
+                  <li class="pagination_item">
+                    <a class="pagination_link" href="#">2</a>
+                  </li>
+                  <li class="pagination_item">
+                    <a class="pagination_link" href="#">3</a>
+                  </li>
+                  <li class="pagination_item">
+                    <a class="pagination_link" href="#">...</a>
+                  </li>
+                  <li class="pagination_item">
+                    <a class="pagination_link" href="#">15</a>
+                  </li>
+                </ul>
+                <a class="pagination_link pagination_next" href="#">
+                  <span class="pagination_text pagination_forward">Вперёд</span>
+                </a>
+              </div>
           </div>
       </div>
       </section>
@@ -282,16 +281,19 @@
             <li class="main_footer_navigation_social_item">
               <a class="main_footer_navigation_social_link" href="https://t.me/htmlacademy">
                 <span class="visually_hidden">Телеграм</span>
+                <div class="social_link_circle"></div>
               </a>
             </li>
             <li class="main_footer_navigation_social_item">
               <a class="main_footer_navigation_social_link" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually_hidden">Ютуб</span>
+                <div class="social_link_circle"></div>
               </a>
             </li>
             <li class="main_footer_navigation_social_item">
               <a class="main_footer_navigation_social_link" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually_hidden">Твиттер</span>
+                <div class="social_link_circle"></div>
               </a>
             </li>
           </ul>
