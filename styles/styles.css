@@ -1045,7 +1045,7 @@ body {
 }
 .breadcrumbs_item:not(:last-child)::after {
   content: "x";
-  background-image: url(/images/breadcrumbs_arrow.svg);
+  background-image: url(../images/breadcrumbs_arrow.svg);
   margin-right: 16px;
   position: relative;
   top: 8px;
