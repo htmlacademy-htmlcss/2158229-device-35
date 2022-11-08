@@ -585,7 +585,7 @@ body {
   width: 136px;
   height: 164px;
   background-color: transparent;
-  background-image: url(/images/delivery_man.svg);
+  background-image: url(../images/delivery_man.svg);
   background-repeat: no-repeat;
 }
 .service_guarantee::after {
@@ -596,7 +596,7 @@ body {
   width: 170px;
   height: 195px;
   background-color: transparent;
-  background-image: url(/images/delivery_garantee.svg);
+  background-image: url(../images/delivery_garantee.svg);
   background-repeat: no-repeat;
 }
 .service_credit::after {
@@ -607,7 +607,7 @@ body {
   width: 157px;
   height: 185px;
   background-color: transparent;
-  background-image: url(/images/delivery_credit.svg);
+  background-image: url(../images/delivery_credit.svg);
   background-repeat: no-repeat;
 }
 .services_item_active {
@@ -967,13 +967,13 @@ body {
   outline: 2px solid #af4fff;
 }
 .main_footer_social_telegram {
-  background-image: url("/images/social_telegram.svg");
+  background-image: url("../images/social_telegram.svg");
 }
 .main_footer_social_youtube {
-  background-image: url("/images/social_youtube.svg");
+  background-image: url("../images/social_youtube.svg");
 }
 .main_footer_social_twitter {
-  background-image: url("/images/social_twitter.svg");
+  background-image: url("../images/social_twitter.svg");
 }
 .main_footer_address_text {
   display: block;
