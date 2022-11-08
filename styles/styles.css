@@ -91,7 +91,7 @@ body {
 .button:active::before {
   color: rgba(0, 0, 0, 0.3);
 }
-.button:focus {
+.button:focus-visible {
   outline: 2px solid #af4fff;
 }
 .main_header_controls_button {
@@ -123,7 +123,7 @@ body {
 .main_header_login:active {
   opacity: 0.3;
 }
-.main_header_login:focus {
+.main_header_login:focus-visible {
   outline: 2px solid #af4fff;
 }
 .main_header_login_img {
@@ -150,7 +150,7 @@ body {
   vertical-align: center;
   margin-left: 15px;
 }
-.main_header_logout:focus {
+.main_header_logout:focus-visible {
   outline: 2px solid #af4fff;
 }
 .delivery_button {
@@ -169,7 +169,7 @@ body {
 .main_header_logo_link:active {
   opacity: 0.3;
 }
-.main_header_logo_link:focus {
+.main_header_logo_link:focus-visible {
   outline: 2px solid #af4fff;
 }
 .main_header_find {
@@ -272,7 +272,7 @@ body {
 .main_header_navigation_link:active {
   color: rgba(0, 0, 0, 0.3);
 }
-.main_header_navigation_link:focus {
+.main_header_navigation_link:focus-visible {
   outline: 2px solid #af4fff;
 }
 .catalog_link {
@@ -289,7 +289,7 @@ body {
   opacity: 1;
   transition-duration: 0.2s;
 }
-.catalog_link:focus {
+.catalog_link:focus-visible {
   outline: 2px solid #af4fff;
 }
 .main_link_header {
@@ -308,7 +308,7 @@ body {
 .main_header_controls_link:active {
   color: rgba(0, 0, 0, 0.3);
 }
-.main_header_controls_link:focus {
+.main_header_controls_link:focus-visible {
   outline: 2px solid #af4fff;
 }
 .main_header_controls_busket {
@@ -382,7 +382,7 @@ body {
 .slider_button:active {
   opacity: 0.3;
 }
-.slider_button:focus {
+.slider_button:focus-visible {
   outline: 2px solid #af4fff;
 }
 .slider_prev {
@@ -490,7 +490,7 @@ body {
 .showcase_link:active {
   opacity: 0.3;
 }
-.showcase_link:focus {
+.showcase_link:focus-visible {
   outline: 2px solid #af4fff;
 }
 .showcase_img {
@@ -647,7 +647,7 @@ body {
 .delivery_form_link:hover .delivery_form_button_info {
   color: #000000;
 }
-.delivery_form_link:focus {
+.delivery_form_link:focus-visible {
   outline: 2px solid #af4fff;
 }
 .delivery_form {
@@ -789,7 +789,7 @@ body {
 .contacts_phone:active {
   opacity: 0.3;
 }
-.contacts_phone:focus {
+.contacts_phone:focus-visible {
   outline: 2px solid #af4fff;
 }
 .contacts_schedule {
@@ -887,7 +887,7 @@ body {
 .main_footer_logo_link:active {
   opacity: 0.3;
 }
-.main_footer_logo_link:focus {
+.main_footer_logo_link:focus-visible {
   outline: 2px solid #af4fff;
 }
 .main_footer_logo_link {
@@ -935,7 +935,7 @@ body {
 .main_footer_navigation_link:active {
   opacity: 0.3;
 }
-.main_footer_navigation_link:focus {
+.main_footer_navigation_link:focus-visible {
   outline: 2px solid #af4fff;
 }
 .main_footer_navigation_social_list {
@@ -963,7 +963,7 @@ body {
   background-color: #fcc700;
   opacity: 0.3;
 }
-.main_footer_navigation_social_link:focus {
+.main_footer_navigation_social_link:focus-visible {
   outline: 2px solid #af4fff;
 }
 .main_footer_social_telegram {
@@ -992,7 +992,7 @@ body {
 .main_footer_tel_link:active {
   opacity: 0.3;
 }
-.main_footer_tel_link:focus {
+.main_footer_tel_link:focus-visible {
   outline: 2px solid #af4fff;
 }
 .main_footer_copy {
@@ -1005,7 +1005,7 @@ body {
 .main_footer_copy:active {
   opacity: 0.3;
 }
-.main_footer_copy:focus {
+.main_footer_copy:focus-visible {
   outline: 2px solid #af4fff;
 }
 /* Внутренняя страница */
@@ -1040,7 +1040,7 @@ body {
 .breadcrumbs_link:hover {
   opacity: 0.6;
 }
-.breadcrumbs_link:focus {
+.breadcrumbs_link:focus-visible {
   outline: 2px solid #af4fff;
 }
 .breadcrumbs_item:not(:last-child)::after {
@@ -1128,7 +1128,7 @@ body {
 .button_sort:active {
   opacity: 1;
 }
-.button_sort:focus {
+.button_sort:focus-visible {
   outline: 2px solid #af4fff;
 }
 .catalog_products_title {
@@ -1151,7 +1151,7 @@ body {
   background: #f0f0f0;
   border: 0;
 }
-.select_control:focus {
+.select_control:focus-visible {
   outline: 2px solid #af4fff;
 }
 .product_sort {
@@ -1189,7 +1189,7 @@ body {
   color: #444444;
   text-decoration: none;
 }
-.product_card_link:focus {
+.product_card_link:focus-visible {
   outline: 2px solid #af4fff;
 }
 .pagination_show_more {
@@ -1209,7 +1209,7 @@ body {
 .pagination_show_more:active {
   opacity: 0.3;
 }
-.pagination_show_more:focus {
+.pagination_show_more:focus-visible {
   outline: 2px solid #af4fff;
 }
 /* Пагинация */
@@ -1256,7 +1256,7 @@ body {
   background-color: #dcdcdc;
   color: #999999;
 }
-.pagination_link:focus {
+.pagination_link:focus-visible {
   outline: 2px solid #af4fff;
 }
 .pagination_current {
