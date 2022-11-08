@@ -967,13 +967,13 @@ body {
   outline: 2px solid #af4fff;
 }
 .main_footer_social_telegram {
-  background-image: url("/images/social_telegram.svg");
+  background-image: url("../images/social_telegram.svg");
 }
 .main_footer_social_youtube {
-  background-image: url("/images/social_youtube.svg");
+  background-image: url("../images/social_youtube.svg");
 }
 .main_footer_social_twitter {
-  background-image: url("/images/social_twitter.svg");
+  background-image: url("../images/social_twitter.svg");
 }
 .main_footer_address_text {
   display: block;
