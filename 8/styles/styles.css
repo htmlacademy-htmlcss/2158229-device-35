@@ -42,6 +42,7 @@ html {
   height: 100%;
 }
 body {
+  width: min-content
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -189,22 +190,10 @@ body {
   border-bottom-left-radius: 20px;
   padding-left: 48px;
 }
-.main_header_find input::-webkit-input-placeholder {
-  /* Chrome */
+.main_header_find input::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
-.main_header_find input:-ms-input-placeholder {
-  /* IE 10+ */
-  color: rgba(0, 0, 0, 0.3);
-}
-.main_header_find input::-moz-placeholder {
-  /* Firefox 19+ */
-  color: rgba(0, 0, 0, 0.3);
-}
-.main_header_find input:-moz-placeholder {
-  /* Firefox 4 - 18 */
-  color: rgba(0, 0, 0, 0.3);
-}
+
 .main_link {
   display: block;
   font-family: "Raleway", "Arial", sans-serif;
@@ -585,7 +574,7 @@ body {
   width: 136px;
   height: 164px;
   background-color: transparent;
-  background-image: url(../images/delivery_man.svg);
+  background-image: url("../images/delivery_man.svg");
   background-repeat: no-repeat;
 }
 .service_guarantee::after {
@@ -596,7 +585,7 @@ body {
   width: 170px;
   height: 195px;
   background-color: transparent;
-  background-image: url(../images/delivery_garantee.svg);
+  background-image: url("../images/delivery_garantee.svg");
   background-repeat: no-repeat;
 }
 .service_credit::after {
@@ -607,7 +596,7 @@ body {
   width: 157px;
   height: 185px;
   background-color: transparent;
-  background-image: url(../images/delivery_credit.svg);
+  background-image: url("../images/delivery_credit.svg");
   background-repeat: no-repeat;
 }
 .services_item_active {
@@ -1045,7 +1034,7 @@ body {
 }
 .breadcrumbs_item:not(:last-child)::after {
   content: "x";
-  background-image: url(../images/breadcrumbs_arrow.svg);
+  background-image: url("../images/breadcrumbs_arrow.svg");
   margin-right: 16px;
   position: relative;
   top: 8px;
