@@ -1436,8 +1436,39 @@ body {
   text-align: center;
   font-size: 16px;
 }
+.delivery_item input:hover,
+.delivery_buttons input:hover,
+.delivery_item_big input:hover {
+  background: #dcdcdc;
+}
 .delivery_text {
   width: 100%;
+}
+.user_name {
+  display: block;
+  position: relative;
+}
+.delivery_item::after {
+  content: "";
+  position: absolute;
+  left: 390px;
+  top: 223px;
+  width: 13px;
+  height: 12px;
+  background-color: transparent;
+  background-image: url("../images/name.svg");
+  background-repeat: no-repeat;
+}
+.delivery_title::after {
+  content: "";
+  position: absolute;
+  right: 100px;
+  top: 223px;
+  width: 15px;
+  height: 12px;
+  background-color: transparent;
+  background-image: url("../images/mail.svg");
+  background-repeat: no-repeat;
 }
 .delivery_title {
   display: flex;
@@ -1453,8 +1484,6 @@ body {
 }
 .delivery_mail {
   font-size: 14px;
-  color: #ff3d3d;
-  display: none;
 }
 .modal_container_close {
   display: none;
