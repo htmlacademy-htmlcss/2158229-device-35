@@ -49,19 +49,80 @@
           <li class="main_header_controls_item">
 
             <a class="main_header_controls_link main_header_controls_busket" href="#">
+              <span class="main_header_busket_number">2</span>
               <svg class="main_header_busket_img" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z" fill="currentColor"/></svg>
               Корзина
             </a>
+            <!-- Поповер Корзины -->
+            <div class="popover">
+              <svg class="popover_triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 6H0L7 0L14 6Z" fill="black"/>
+              </svg>
+              <div class="popover_content">
+                <h2 class="visually_hidden">Корзина</h2>
+                <!-- Карточка с товаром -->
+                <ul class="popover_product_list">
+                  <li class="popover_product-card">
+                    <a class="popover_product-card_link" href="#">
+                      <img class="popover_product-card_img" src="/images/catalog/product_1.jpg" alt="Фотография Любительской селфи-палки.">
+                      Любительская селфи-палка
+                    </a>
+                    <button class="popover_product-delete_button">
+                      <svg class="popover_product-delete_button_img" width="10px" height="10px" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 .9 9.1 0 5 4.1.9 0 0 .9 4.1 5 0 9.1l.9.9L5 5.9 9.1 10l.9-.9L5.9 5 10 .9Z" fill="CurrentColor"/></svg>
+                      <span class="visually_hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+
+                  <li class="popover_product-card">
+                    <a class="popover_product-card_link" href="#">
+                      <img class="popover_product-card_img" src="/images/catalog/product_2.jpg" alt="Фотография Профессиональной селфи-палки.">
+                      Профессиональная селфи-палка
+                    </a>
+                    <button class="popover_product-delete_button">
+                      <svg class="popover_product-delete_button_img" width="10px" height="10px" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 .9 9.1 0 5 4.1.9 0 0 .9 4.1 5 0 9.1l.9.9L5 5.9 9.1 10l.9-.9L5.9 5 10 .9Z" fill="CurrentColor"/></svg>
+                      <span class="visually_hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+
+                <ul class="popover_total">
+                  <li class="popover_total_item">Товаров: <span class="popover_busket_total">2</span></li>
+                  <li class="popover_total_item">Сумма: <span class="popover_busket_sum">2000</span> ₽</li>
+                </ul>
+
+                <a class="popover_busket_button" href="#">
+                  Открыть корзину
+                </a>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
       <!-- Шапка нижняя с навигацией -->
       <nav class="main_header_navigation">
-        <a class="main_link catalog_link" href="#">
-          Каталог товаров
-          <svg class="main_header_navigation_img" width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25.79" r="24" stroke="#000" stroke-width="2"/><g clip-path="url(#a)"><path d="M33 24.79h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000"/></g><defs><clipPath id="a"><path fill="#fff" d="M17 17.79h16v16H17z"/></clipPath></defs></svg>
-        </a>
-
+        <div class="main_header_catalog">
+          <a class="main_link catalog_link" href="#">
+            Каталог товаров
+            <svg class="main_header_navigation_img"></svg>
+          </a>
+          <!-- Подкаталог с товарами поповер -->
+          <div class="main_header_subcatalog">
+            <ul class="main_header_subcatalog_list">
+              <li class="main_header_subcatalog_item">
+                <a class="subcatalog_link" href="#">Виртуальная реальность</a>
+                <a class="subcatalog_link" href="catalog.html">Моноподы для селфи</a>
+                <a class="subcatalog_link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="main_header_subcatalog_item">
+                <a class="subcatalog_link" href="#">Фитнес-браслеты</a>
+                <a class="subcatalog_link" href="#">Умные часы</a>
+              </li>
+              <li class="main_header_subcatalog_item">
+                <a class="subcatalog_link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <ul class="main_header_navigation_list">
           <li class="main_header_navigation_item">
@@ -214,53 +275,53 @@
                 <li class="product_card">
                   <a class="product_card_link" href="#">
                     <img class="product_card_image" src="images/catalog/product_1.jpg" alt="">
-                    <div class="hover_link">
-                      <button type="button" class="add_to_cart button">В корзину</button>
-                    </div>
-                    <div class="product_card_title_wrapper">
+                      <div class="product_card_title_wrapper">
                       <h3 class="product_card_title">Любительская селфи-палка</h3>
                       <span class="product_card_price">500 ₽</span>
                     </div>
                   </a>
+                  <div class="hover_link">
+                    <button type="button" class="add_to_cart button">В корзину</button>
+                  </div>
                 </li>
 
                 <li class="product_card">
                   <a class="product_card_link" href="#">
                     <img class="product_card_image" src="images/catalog/product_2.jpg" alt="">
-                    <div class="hover_link">
-                      <button type="button" class="add_to_cart button">В корзину</button>
-                    </div>
-                    <div class="product_card_title_wrapper">
+                      <div class="product_card_title_wrapper">
                       <h3 class="product_card_title">Профессиональная селфи-палка </h3>
                       <span class="product_card_price">1500 ₽</span>
                     </div>
                   </a>
+                  <div class="hover_link">
+                    <button type="button" class="add_to_cart button">В корзину</button>
+                  </div>
                 </li>
 
                 <li class="product_card">
                   <a class="product_card_link" href="#">
                     <img class="product_card_image" src="images/catalog/product_3.jpg" alt="">
-                    <div class="hover_link">
-                      <button type="button" class="add_to_cart button">В корзину</button>
-                    </div>
                     <div class="product_card_title_wrapper">
                       <h3 class="product_card_title">Непотопляемая селфи-палка</h3>
                       <span class="product_card_price">2500 ₽</span>
                     </div>
                   </a>
+                  <div class="hover_link">
+                    <button type="button" class="add_to_cart button">В корзину</button>
+                  </div>
                 </li>
 
                 <li class="product_card">
                   <a class="product_card_link" href="#">
                     <img class="product_card_image" src="images/catalog/product_4.jpg" alt="">
-                    <div class="hover_link">
-                      <button type="button" class="add_to_cart button">В корзину</button>
-                    </div>
                     <div class="product_card_title_wrapper">
                       <h3 class="product_card_title">Селфи-палка «Следуй за мной»</h3>
                       <span class="product_card_price">1500 ₽</span>
                     </div>
                   </a>
+                  <div class="hover_link">
+                    <button type="button" class="add_to_cart button">В корзину</button>
+                  </div>
                 </li>
               </ul>
               <!-- Кнопка «Загрузить ещё» -->

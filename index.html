@@ -43,6 +43,7 @@
           <li class="main_header_controls_item">
 
             <a class="main_header_controls_link main_header_controls_busket" href="#">
+              <span class="main_header_busket_number">2</span>
               <svg class="main_header_busket_img" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z" fill="currentColor"/></svg>
               Корзина
             </a>
@@ -86,7 +87,6 @@
                 <a class="popover_busket_button" href="#">
                   Открыть корзину
                 </a>
-
               </div>
             </div>
 
@@ -98,7 +98,7 @@
         <div class="main_header_catalog">
           <a class="main_link catalog_link" href="#">
             Каталог товаров
-            <svg class="main_header_navigation_img" width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25.79" r="24" stroke="#000" stroke-width="2"/><g clip-path="url(#a)"><path d="M33 24.79h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000"/></g><defs><clipPath id="a"><path fill="#fff" d="M17 17.79h16v16H17z"/></clipPath></defs></svg>
+            <svg class="main_header_navigation_img"></svg>
           </a>
           <!-- Подкаталог с товарами поповер -->
           <div class="main_header_subcatalog">
@@ -478,5 +478,57 @@
         </section>
       </div>
     </footer>
+    <!-- Модальное окно -->
+    <div class="modal_container modal_container_close">
+      <div class="modal modal_auth">
+        <button class="modal_close_button">
+          <span class="visually_hidden">Закрыть</span>
+        </button>
+        <section class="modal_content">
+          <h2 class="modal_title">Доставка под заказ</h2>
+          <form class="delivery_modal" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="delivery_item">
+              <label class="delivery_title" for="name">Ваше имя:</label>
+              <input id="name" class="user_name" name="name" type="text" placeholder="Имя Фамилия">
+              <span class="delivery_name">Добавьте имя</span>
+            </div>
+            <div class="delivery_item">
+              <label class="delivery_title" for="mail">Ваш e-mail:</label>
+              <input id="mail" class="user_email" name="mail" type="email" placeholder="email@example.com">
+              <span class="delivery_mail">Забавный у вас адрес</span>
+            </div>
+            <div class="delivery_item_big">
+              <label class="delivery_title" for="text">Что нужно привезти:</label>
+              <input id="text" class="delivery_text" name="text" placeholder="В свободной форме">
+            </div>
+
+            <div class="quantity_inner">
+              <span class="delivery_quant">
+                <label class="delivery_title delivery_quant" for="quant">Количество:</label>
+                <span class="tooltip">
+                  <button class="tooltip_toggle" type="button"  aria-labelledby="tooltip-label-date">i
+                  </button>
+                  <span class="tooltip_text" role="tooltip"  id="tooltip-label-date"><svg class="tooltip_triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H0L7 0L14 6Z" fill="black"/>
+                  </svg>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                    к провозу багажа.</span>
+                </span>
+              </span>
+              <div class="delivery_buttons">
+                <button class="bt_minus" type="button">
+                  <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                </button>
+                <input type="number" id="quant" name="quantity" value="1" min="1" class="quantity" required>
+                <button class="bt_plus" type="button">
+                  <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                </button>
+              </div>
+            </div>
+            <button class="button button_modal" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 </html>
