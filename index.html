@@ -18,7 +18,9 @@
         <ul class="main_header_controls">
           <li class="main_header_controls_item">
             <form class="main_header_find"  action="https://echo.htmlacademy.ru/" method="post">
-              <input type="text" placeholder="Поиск по сайту">
+              <label class="main_header_controls_label">
+                <input type="text" placeholder="Поиск по сайту">
+              </label>
               <button class="main_header_controls_button main_header_find_button" type="submit">
                 Найти
               </button>
@@ -43,19 +45,81 @@
           <li class="main_header_controls_item">
 
             <a class="main_header_controls_link main_header_controls_busket" href="#">
+              <span class="main_header_busket_number">2</span>
               <svg class="main_header_busket_img" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z" fill="currentColor"/></svg>
               Корзина
             </a>
+            <!-- Поповер Корзины -->
+            <div class="popover">
+              <svg class="popover_triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 6H0L7 0L14 6Z" fill="black"/>
+              </svg>
+              <div class="popover_content">
+                <h2 class="visually_hidden">Корзина</h2>
+                <!-- Карточка с товаром -->
+                <ul class="popover_product_list">
+                  <li class="popover_product-card">
+                    <a class="popover_product-card_link" href="#">
+                      <img class="popover_product-card_img" src="images/catalog/product_1.jpg" alt="Фотография Любительской селфи-палки.">
+                      Любительская селфи-палка
+                    </a>
+                    <button class="popover_product-delete_button">
+                      <svg class="popover_product-delete_button_img" width="10px" height="10px" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 .9 9.1 0 5 4.1.9 0 0 .9 4.1 5 0 9.1l.9.9L5 5.9 9.1 10l.9-.9L5.9 5 10 .9Z" fill="CurrentColor"/></svg>
+                      <span class="visually_hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+
+                  <li class="popover_product-card">
+                    <a class="popover_product-card_link" href="#">
+                      <img class="popover_product-card_img" src="images/catalog/product_2.jpg" alt="Фотография Профессиональной селфи-палки.">
+                      Профессиональная селфи-палка
+                    </a>
+                    <button class="popover_product-delete_button">
+                      <svg class="popover_product-delete_button_img" width="10px" height="10px" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 .9 9.1 0 5 4.1.9 0 0 .9 4.1 5 0 9.1l.9.9L5 5.9 9.1 10l.9-.9L5.9 5 10 .9Z" fill="CurrentColor"/></svg>
+                      <span class="visually_hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+
+                <ul class="popover_total">
+                  <li class="popover_total_item">Товаров: <span class="popover_busket_total">2</span></li>
+                  <li class="popover_total_item">Сумма: <span class="popover_busket_sum">2000</span> ₽</li>
+                </ul>
+
+                <a class="popover_busket_button" href="#">
+                  Открыть корзину
+                </a>
+              </div>
+            </div>
+
           </li>
         </ul>
       </div>
       <!-- Шапка нижняя с навигацией -->
       <nav class="main_header_navigation">
-        <a class="main_link catalog_link" href="#">
-          Каталог товаров
-          <svg class="main_header_navigation_img" width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25.79" r="24" stroke="#000" stroke-width="2"/><g clip-path="url(#a)"><path d="M33 24.79h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000"/></g><defs><clipPath id="a"><path fill="#fff" d="M17 17.79h16v16H17z"/></clipPath></defs></svg>
-        </a>
-
+        <div class="main_header_catalog">
+          <a class="main_link catalog_link" href="#">
+            Каталог товаров
+            <svg class="main_header_navigation_img"></svg>
+          </a>
+          <!-- Подкаталог с товарами поповер -->
+          <div class="main_header_subcatalog">
+            <ul class="main_header_subcatalog_list">
+              <li class="main_header_subcatalog_item">
+                <a class="subcatalog_link" href="#">Виртуальная реальность</a>
+                <a class="subcatalog_link" href="catalog.html">Моноподы для селфи</a>
+                <a class="subcatalog_link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="main_header_subcatalog_item">
+                <a class="subcatalog_link" href="#">Фитнес-браслеты</a>
+                <a class="subcatalog_link" href="#">Умные часы</a>
+              </li>
+              <li class="main_header_subcatalog_item">
+                <a class="subcatalog_link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <ul class="main_header_navigation_list">
           <li class="main_header_navigation_item">
@@ -118,7 +182,6 @@
               <li class="slider_pagination_item">
                 <button class="slider_pagination_button slider_pagination_button_current" type="button">
                   <span class="visually_hidden">Квадрокоптеры.</span>
-
                 </button>
               </li>
               <li class="slider_pagination_item">
@@ -141,7 +204,6 @@
           <div class="slider_2_wrapper">
             <img class="slider_image" src="images/slider-2.png" width="560" height="560" alt="Товары. Фитнес-браслет." >
             <div class="slider_info_wrapper">
-
               <b class="slider_slogan">Худеем правильно!</b>
               <span class="slider_text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</span>
               <a class="slider_link main_link button" href="#">Подробнее</a>
@@ -163,7 +225,6 @@
           <div class="slider_3_wrapper">
             <img class="slider_image" src="images/slider-3.png" width="560" height="560" alt="Товары. Селфи-палка." >
             <div class="slider_info_wrapper">
-
               <b class="slider_slogan">Делай селфи, как Бен Стиллер!</b>
               <span class="slider_text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</span>
               <a class="slider_link main_link button" href="#">Подробнее</a>
@@ -188,7 +249,6 @@
       <section class="showcase">
         <h2 class="visually_hidden">Витрина с товарами.</h2>
         <ul class="showcase_list">
-
           <li class="showcase_item">
             <a class="showcase_link" href="#">
               <h3 class="showcase_title">Виртуальная реальность</h3>
@@ -420,5 +480,57 @@
         </section>
       </div>
     </footer>
+    <!-- Модальное окно -->
+    <div class="modal_container modal_container_close">
+      <div class="modal modal_auth">
+        <button class="modal_close_button">
+          <span class="visually_hidden">Закрыть.</span>
+        </button>
+        <section class="modal_content">
+          <h2 class="modal_title">Доставка под заказ</h2>
+          <form class="delivery_modal" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="delivery_item">
+              <label class="delivery_title" for="name">Ваше имя:</label>
+              <input id="name" class="user_name" name="name" type="text" placeholder="Имя Фамилия">
+              <span class="delivery_name">Добавьте имя</span>
+            </div>
+            <div class="delivery_item">
+              <label class="delivery_title" for="mail">Ваш e-mail:</label>
+              <input id="mail" class="user_email" name="mail" type="email" placeholder="email@example.com">
+              <span class="delivery_mail">Забавный у вас адрес</span>
+            </div>
+            <div class="delivery_item_big">
+              <label class="delivery_title" for="text">Что нужно привезти:</label>
+              <input id="text" class="delivery_text" name="text" placeholder="В свободной форме">
+            </div>
+
+            <div class="quantity_inner">
+              <span class="delivery_quant">
+                <label class="delivery_title delivery_quant" for="quant">Количество:</label>
+                <span class="tooltip">
+                  <button class="tooltip_toggle" type="button"  aria-labelledby="tooltip-label-date">i
+                  </button>
+                  <span class="tooltip_text" role="tooltip"  id="tooltip-label-date"><svg class="tooltip_triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H0L7 0L14 6Z" fill="black"/>
+                  </svg>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                    к провозу багажа.</span>
+                </span>
+              </span>
+              <div class="delivery_buttons">
+                <button class="bt_minus" type="button">
+                  <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                </button>
+                <input type="number" id="quant" name="quantity" value="1" min="1" class="quantity" required>
+                <button class="bt_plus" type="button">
+                  <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                </button>
+              </div>
+            </div>
+            <button class="button button_modal" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 </html>
