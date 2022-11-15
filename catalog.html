@@ -18,7 +18,9 @@
         <ul class="main_header_controls">
           <li class="main_header_controls_item">
             <form class="main_header_find"  action="https://echo.htmlacademy.ru/" method="post">
-              <input type="text" placeholder="Поиск по сайту">
+              <label class="main_header_controls_label">
+                <input type="text" placeholder="Поиск по сайту">
+              </label>
               <button class="main_header_controls_button main_header_find_button" type="submit">
                 Найти
               </button>
@@ -64,18 +66,18 @@
                 <ul class="popover_product_list">
                   <li class="popover_product-card">
                     <a class="popover_product-card_link" href="#">
-                      <img class="popover_product-card_img" src="/images/catalog/product_1.jpg" alt="Фотография Любительской селфи-палки.">
+                      <img class="popover_product-card_img" src="images/catalog/product_1.jpg" alt="Фотография Любительской селфи-палки.">
                       Любительская селфи-палка
                     </a>
                     <button class="popover_product-delete_button">
                       <svg class="popover_product-delete_button_img" width="10px" height="10px" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 .9 9.1 0 5 4.1.9 0 0 .9 4.1 5 0 9.1l.9.9L5 5.9 9.1 10l.9-.9L5.9 5 10 .9Z" fill="CurrentColor"/></svg>
-                      <span class="visually_hidden">Удалить из корзины</span>
+                      <span class="visually_hidden">Удалить из корзины.</span>
                     </button>
                   </li>
 
                   <li class="popover_product-card">
                     <a class="popover_product-card_link" href="#">
-                      <img class="popover_product-card_img" src="/images/catalog/product_2.jpg" alt="Фотография Профессиональной селфи-палки.">
+                      <img class="popover_product-card_img" src="images/catalog/product_2.jpg" alt="Фотография Профессиональной селфи-палки.">
                       Профессиональная селфи-палка
                     </a>
                     <button class="popover_product-delete_button">
@@ -168,10 +170,10 @@
               <div class="range">
                 <div class="range_scale">
                   <div class="range_bar" style="left: 0; width: 119px">
-                    <button class="range_toggle toggle_min">
+                    <button class="range_toggle toggle_min" type="button">
                       <span class="visually_hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range_toggle toggle_max">
+                    <button class="range_toggle toggle_max" type="button">
                       <span class="visually_hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
@@ -274,8 +276,8 @@
               <ul class="product_list">
                 <li class="product_card">
                   <a class="product_card_link" href="#">
-                    <img class="product_card_image" src="images/catalog/product_1.jpg" alt="">
-                      <div class="product_card_title_wrapper">
+                    <img class="product_card_image" src="images/catalog/product_1.jpg" alt="Любительская селфи-палка.">
+                    <div class="product_card_title_wrapper">
                       <h3 class="product_card_title">Любительская селфи-палка</h3>
                       <span class="product_card_price">500 ₽</span>
                     </div>
@@ -287,8 +289,8 @@
 
                 <li class="product_card">
                   <a class="product_card_link" href="#">
-                    <img class="product_card_image" src="images/catalog/product_2.jpg" alt="">
-                      <div class="product_card_title_wrapper">
+                    <img class="product_card_image" src="images/catalog/product_2.jpg" alt="Профессиональная селфи-палка.">
+                    <div class="product_card_title_wrapper">
                       <h3 class="product_card_title">Профессиональная селфи-палка </h3>
                       <span class="product_card_price">1500 ₽</span>
                     </div>
@@ -300,7 +302,7 @@
 
                 <li class="product_card">
                   <a class="product_card_link" href="#">
-                    <img class="product_card_image" src="images/catalog/product_3.jpg" alt="">
+                    <img class="product_card_image" src="images/catalog/product_3.jpg" alt="Непотопляемая селфи-палка.">
                     <div class="product_card_title_wrapper">
                       <h3 class="product_card_title">Непотопляемая селфи-палка</h3>
                       <span class="product_card_price">2500 ₽</span>
@@ -313,7 +315,7 @@
 
                 <li class="product_card">
                   <a class="product_card_link" href="#">
-                    <img class="product_card_image" src="images/catalog/product_4.jpg" alt="">
+                    <img class="product_card_image" src="images/catalog/product_4.jpg" alt="Селфи-палка «Следуй за мной».">
                     <div class="product_card_title_wrapper">
                       <h3 class="product_card_title">Селфи-палка «Следуй за мной»</h3>
                       <span class="product_card_price">1500 ₽</span>
@@ -333,19 +335,19 @@
                 </a>
                 <ul class="pagination">
                   <li class="pagination_item">
-                    <a class="pagination_link pagination_current">1</a>
+                    <a class="pagination_link pagination_current"><span class="pagination_page">1</span></a>
                   </li>
                   <li class="pagination_item">
-                    <a class="pagination_link" href="#">2</a>
+                    <a class="pagination_link" href="#"><span class="pagination_page">2</span></a>
                   </li>
                   <li class="pagination_item">
-                    <a class="pagination_link" href="#">3</a>
+                    <a class="pagination_link" href="#"><span class="pagination_page">3</span></a>
                   </li>
                   <li class="pagination_item">
-                    <a class="pagination_link" href="#">...</a>
+                    <a class="pagination_link" href="#"><span class="pagination_page">...</span></a>
                   </li>
                   <li class="pagination_item">
-                    <a class="pagination_link" href="#">15</a>
+                    <a class="pagination_link" href="#"><span class="pagination_page">15</span></a>
                   </li>
                 </ul>
                 <a class="pagination_link pagination_next" href="#">
