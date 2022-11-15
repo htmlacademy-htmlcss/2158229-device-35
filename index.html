@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Интернет-магазин «Девайс»</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   </head>
   <body>
     <!-- Шапка сайта -->
@@ -55,7 +57,7 @@
                 <path d="M14 6H0L7 0L14 6Z" fill="black"/>
               </svg>
               <div class="popover_content">
-                <h2 class="visually_hidden">Корзина</h2>
+                <h2 class="visually_hidden">Корзина.</h2>
                 <!-- Карточка с товаром -->
                 <ul class="popover_product_list">
                   <li class="popover_product-card">
@@ -65,7 +67,7 @@
                     </a>
                     <button class="popover_product-delete_button">
                       <svg class="popover_product-delete_button_img" width="10px" height="10px" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 .9 9.1 0 5 4.1.9 0 0 .9 4.1 5 0 9.1l.9.9L5 5.9 9.1 10l.9-.9L5.9 5 10 .9Z" fill="CurrentColor"/></svg>
-                      <span class="visually_hidden">Удалить из корзины</span>
+                      <span class="visually_hidden">Удалить из корзины.</span>
                     </button>
                   </li>
 
@@ -76,7 +78,7 @@
                     </a>
                     <button class="popover_product-delete_button">
                       <svg class="popover_product-delete_button_img" width="10px" height="10px" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 .9 9.1 0 5 4.1.9 0 0 .9 4.1 5 0 9.1l.9.9L5 5.9 9.1 10l.9-.9L5.9 5 10 .9Z" fill="CurrentColor"/></svg>
-                      <span class="visually_hidden">Удалить из корзины</span>
+                      <span class="visually_hidden">Удалить из корзины.</span>
                     </button>
                   </li>
                 </ul>
@@ -260,7 +262,7 @@
 
           <li class="showcase_item">
             <a class="showcase_link" href="catalog.html">
-              <h3 class="showcase_title">Моноподы для селфи</h3>
+              <h3 class="showcase_title">Моноподы для&nbsp;селфи</h3>
               <div class="showcase_img">
                 <img src="images/showcase_2.svg" width="86" height="117" alt="Иконка моноподов для селфи.">
               </div>
@@ -378,11 +380,11 @@
         <!-- Блок с контактами -->
         <section class="contacts">
           <h2 class="contacts_title">Контакты</h2>
-          <p class="contacts_text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
+          <p class="contacts_text">Вы можете забрать товар сами, заехав в наш офис. Заодно&nbsp;сможете проверить работоспособность покупки.</p>
           <h3 class="contacts_title_mini">Интернет-магазин «Девайс»</h3>
 
           <address class="contacts_address">
-            <p class="contacts_address_text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <p class="contacts_address_text">Санкт-Петербург, набережная реки Карповки,5, литера П.</p>
             <a class="contacts_phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </address>
 
@@ -407,7 +409,7 @@
           </div>
           <div class="subscribe_form_wrapper">
             <form class="subscribe_form" action="https://echo.htmlacademy.ru/" method="post">
-              <input type="email" id="email" name="email" placeholder="Ваш e-mail">
+              <input type="email" id="email" name="email" placeholder="&nbsp;&nbsp;&nbsp;Ваш e-mail">
               <button class="subscribe_button" type="submit">
                 Подписаться
               </button>
@@ -430,8 +432,6 @@
           <address class="main_footer_address">
             <p class="main_footer_address_text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           </address>
-
-          <div class="main_footer_line_yellow"></div>
         </section>
         <!-- Блок подвала с навигацией -->
         <section class="main_footer_navigation">
@@ -491,17 +491,17 @@
           <form class="delivery_modal" action="https://echo.htmlacademy.ru" method="POST">
             <div class="delivery_item">
               <label class="delivery_title" for="name">Ваше имя:</label>
-              <input id="name" class="user_name" name="name" type="text" placeholder="Имя Фамилия">
+              <input id="name" class="user_name" name="name" type="text" placeholder="Имя Фамилия" required>
               <span class="delivery_name">Добавьте имя</span>
             </div>
             <div class="delivery_item">
               <label class="delivery_title" for="mail">Ваш e-mail:</label>
-              <input id="mail" class="user_email" name="mail" type="email" placeholder="email@example.com">
+              <input id="mail" class="user_email" name="mail" type="email" placeholder="email@example.com" required>
               <span class="delivery_mail">Забавный у вас адрес</span>
             </div>
             <div class="delivery_item_big">
               <label class="delivery_title" for="text">Что нужно привезти:</label>
-              <input id="text" class="delivery_text" name="text" placeholder="В свободной форме">
+              <input id="text" class="delivery_text" name="text" placeholder="В свободной форме" required>
             </div>
 
             <div class="quantity_inner">
