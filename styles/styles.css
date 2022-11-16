@@ -577,8 +577,13 @@ body {
 
 .popover_product-card {
   display: flex;
-  padding: 0 20px 42px 20px;
+  padding: 0 20px 18px 20px;
   justify-content: space-between;
+}
+
+.popover_product-card + .popover_product-card {
+  border-top: 1px solid #191919;
+  padding-top: 20px;
 }
 
 .popover_product-card_img {
@@ -615,7 +620,7 @@ body {
 
 .popover_product-card_link img {
   margin-right: 23px;
-  margin-top: -2px;
+  margin-top: -1px;
 }
 
 .popover_product-delete_button {
