@@ -627,6 +627,7 @@ body {
   position: relative;
   height: 10px;
   width: 10px;
+  border: 0;
   background-color: #000000;
   color: #ffffff;
   align-items: start;
@@ -1682,7 +1683,7 @@ body {
 .modal {
   position: relative;
   margin: auto;
-  padding: 59px 70px 60px;
+  padding: 57px 70px 57px;
   background-color: #ffffff;
   border: 10px solid #000000;
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -1730,11 +1731,11 @@ body {
 }
 
 .button_modal {
-  min-width: 214px;
+  min-width: 203px;
   cursor: pointer;
   border: none;
   background-color: transparent;
-  padding: 30px;
+  padding: 10px 20px;
 }
 
 .delivery_item {
