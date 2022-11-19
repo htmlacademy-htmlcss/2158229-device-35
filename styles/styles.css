@@ -1156,7 +1156,6 @@ body {
 .delivery_form_link:hover .delivery_form_img {
   background-color: #ffc700;
   transition-duration: 0.2s;
-
 }
 
 .delivery_form_link:hover .delivery_form_button_info {
@@ -2336,6 +2335,7 @@ body {
 }
 
 .select_control {
+  font-family: "Rubik", "Arial", sans-serif;
   position: relative;
   left: 5px;
   max-width: 500px;
